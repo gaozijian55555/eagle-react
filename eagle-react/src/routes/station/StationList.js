@@ -5,7 +5,9 @@
 import React, { Component } from 'react';
 import './Station.css';
 import {Link} from 'react-router'
-import {checkValidServiceWorker} from '../../service/registerServiceWorker'
+import register from '../../service/registerServiceWorker'
+import {stationList} from '../../service/getData'
+
 import start_png from '../../images/star_icon_y.png'
 import address_png from '../../images/site_icon.png'
 import pile_png from '../../images/Community_Serve_List.png'
@@ -54,13 +56,14 @@ var StationListCell = React.createClass({
     }
 });
 
+
+
 class StationList extends Component {
 
-    componentDidMount ()
-    {
-        fetch("http://itstest.letscharge.cn/api/bike_stations/200.json").then(res => {
+    componentDidMount () {
+        stationList().then(res => {
             this.setState({
-                data: res
+                items : res.item,
             })
         });
     }
