@@ -36,19 +36,19 @@ class BusList extends Component {
         return (
             <div className="list_bg">
 
-             <Link to="/bus_details">
+             <Link to="/">
                     <HelloComponent line_name="云部落大巴1号线" time = "07:30" fromAddress = "云部落TMT园区西南门" toAddress="金榜世家6期(西北门)"/>
              </Link>
 
-             <Link to="/bus_details">
+             <Link to="/">
                     <HelloComponent line_name="云部落大巴2号线" time = "08:30" fromAddress="绿梅一村" toAddress="云部落TMT园区西南门" />
              </Link>
 
-             <Link to="/bus_details">
+             <Link to="/">
                     <HelloComponent line_name="云部落大巴3号线" time = "09:30" fromAddress="863软件园" toAddress="景舒院1村" />
              </Link>
 
-             <Link to="/bus_details">
+             <Link to="/">
                     <HelloComponent line_name="云部落大巴4号线" time = "10:30" fromAddress="联航路地铁站" toAddress="人民广场" />
              </Link>
 
