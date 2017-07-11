@@ -9,6 +9,7 @@ import App from './routes/app/App'
 import About from './routes/about/About'
 import StationList from './routes/station/StationList'
 import BusList from './routes/bus/BusList'
+import BusDetails from './routes/bus/BusDetails'
 
 class RouterRoot extends Component {
     render() {
@@ -18,6 +19,7 @@ class RouterRoot extends Component {
                 <Route path="/about" component={About}/>
                 <Route path="/station_list" component={StationList}/>
                 <Route path="/bus_list" component={BusList}/>
+                <Route path="/bus_details" component={BusDetails}/>
             </Router>
         )
     }
