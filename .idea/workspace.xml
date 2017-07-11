@@ -34,8 +34,8 @@
       <file leaf-file-name="BusList.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/eagle-react/src/routes/bus/BusList.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.41836736">
-              <caret line="32" column="6" selection-start-line="32" selection-start-column="6" selection-end-line="32" selection-end-column="6" />
+            <state vertical-scroll-proportion="0.59070295">
+              <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -151,11 +151,11 @@
         <option value="$PROJECT_DIR$/src/routes/station/StationList.js" />
         <option value="$PROJECT_DIR$/eagle-react/.gitignore" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/eagle-react/src/routes/bus/BusList.js" />
         <option value="$PROJECT_DIR$/eagle-react/src/service/env.js" />
         <option value="$PROJECT_DIR$/eagle-react/src/service/getData.js" />
         <option value="$PROJECT_DIR$/eagle-react/src/routes/station/StationList.js" />
         <option value="$PROJECT_DIR$/eagle-react/src/routes/station/Station.css" />
+        <option value="$PROJECT_DIR$/eagle-react/src/routes/bus/BusList.js" />
       </list>
     </option>
   </component>
@@ -573,12 +573,12 @@
         <state vertical-scroll-proportion="498.7857">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1499760100000" expanded="true" signature="1125:1471" placeholder="..." />
-            <marker date="1499760100000" expanded="true" signature="1191:1454" placeholder="..." />
-            <marker date="1499760100000" expanded="true" signature="1241:1432" placeholder="..." />
-            <marker date="1499760100000" expanded="true" signature="39733:39750" placeholder="..." />
-            <marker date="1499760100000" expanded="true" signature="39733:39768" placeholder="..." />
-            <marker date="1499760100000" expanded="true" signature="39733:39781" placeholder="..." />
+            <marker date="1499767033000" expanded="true" signature="1125:1471" placeholder="..." />
+            <marker date="1499767033000" expanded="true" signature="1191:1454" placeholder="..." />
+            <marker date="1499767033000" expanded="true" signature="1241:1432" placeholder="..." />
+            <marker date="1499767033000" expanded="true" signature="44163:44180" placeholder="..." />
+            <marker date="1499767033000" expanded="true" signature="44163:44198" placeholder="..." />
+            <marker date="1499767033000" expanded="true" signature="44163:44211" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -666,8 +666,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/eagle-react/src/routes/bus/BusList.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.41836736">
-          <caret line="32" column="6" selection-start-line="32" selection-start-column="6" selection-end-line="32" selection-end-column="6" />
+        <state vertical-scroll-proportion="0.59070295">
+          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
