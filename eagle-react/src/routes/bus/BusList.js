@@ -5,7 +5,17 @@ import React, { Component } from 'react';
 import '../station/Station.css';
 import {Link} from 'react-router'
 
-var BusListCell = React.createClass({
+function HelloComponent(props, /* context */) {
+    return <div className="list_bus_content">
+        <div className="bus_top">
+            <span className="fs15 fl"> {this.props.time}  {this.props.line_name} </span>
+            <span className="bus_work fr"> 工作日 </span>
+        </div>
+        <div className="fl ">
+        </div>
+    </div> ;
+}
+{/*var BusListCell = React.createClass({
     render: function() {
         return <div className="list_bus_content">
             <div className="bus_top">
@@ -18,7 +28,7 @@ var BusListCell = React.createClass({
             </div>
         </div> ;
     }
-});
+});*/}
 
 class BusList extends Component {
     render() {
@@ -26,10 +36,12 @@ class BusList extends Component {
             <div className="list_bg">
 
                 <Link to="/">
-                    <BusListCell line_name = "云部落大巴1号线" time = "07:30"></BusListCell>
-                </Link>
+                    ReactDOM.render(<HelloComponent name="云部落大巴1号线" time = "07:30"/>, mountNode)
+                    {/*<BusListCell line_name = "云部落大巴1号线" time = "07:30"></BusListCell>*/}
+            </Link>
                 <Link to="/">
-                    <BusListCell line_name = "云部落大巴2号线" time = "08:30"></BusListCell>
+                    {/*<BusListCell line_name = "云部落大巴2号线" time = "08:30"></BusListCell>*/}
+                    ReactDOM.render(<HelloComponent name="云部落大巴2号线" time = "08:30"/>, mountNode)
                 </Link>
 
             </div>
