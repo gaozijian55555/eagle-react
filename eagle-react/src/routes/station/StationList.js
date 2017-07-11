@@ -7,8 +7,8 @@ import './Station.css';
 import {Link} from 'react-router'
 import {checkValidServiceWorker} from '../../service/registerServiceWorker'
 import start_png from '../../images/star_icon_y.png'
-import address_png from '../../images/address_icon.png'
-import pile_png from '../../images/pile_icon.png'
+import address_png from '../../images/site_icon.png'
+import pile_png from '../../images/Community_Serve_List.png'
 import right_png from '../../images/Right_arrow_btn.png'
 
 var StationListCell = React.createClass({
@@ -37,7 +37,7 @@ var StationListCell = React.createClass({
             </div>
             <div className="padding">
                 <div className="fl">
-                    <img src={address_png} alt="" className="content-star"/>
+                    <img src={address_png} alt="" className="content-location"/>
                     <span className="fs15 color_72"> 联航路1588号 </span>
                 </div>
                 <div className="fr">
@@ -48,7 +48,7 @@ var StationListCell = React.createClass({
             </div>
             <div className="padding h20 border_t mt10 cf">
                 <span className="fs15 color_blue fl"> 详情 </span>
-                <img src={right_png} className="content-star fr" alt=""/>
+                <img src={right_png} className="content-right fr" alt=""/>
             </div>
         </div> ;
     }
@@ -68,7 +68,6 @@ class StationList extends Component {
     render() {
         return (
             <div className="list_bg">
-
 
                 <Link to="/" >
                     <StationListCell station_name = "863软件园11号别墅" dis = "0.13km" > </StationListCell>
