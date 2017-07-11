@@ -6,8 +6,10 @@ import React, { Component } from 'react';
 import './Station.css';
 import {Link} from 'react-router'
 import {checkValidServiceWorker} from '../../service/registerServiceWorker'
-
-
+import start_png from '../../images/star_icon_y.png'
+import address_png from '../../images/address_icon.png'
+import pile_png from '../../images/pile_icon.png'
+import right_png from '../../images/Right_arrow_btn.png'
 
 var StationListCell = React.createClass({
 
@@ -24,44 +26,29 @@ var StationListCell = React.createClass({
             </div>
             <div className="padding h20">
                 <div className="fl">
-                    <img src="../../images/star_icon_y.png" className="content-star" alt=""/>
-                    <img src="./star_icon_y" className="content-star" alt=""/>
-                    <img src="./img/star_icon_y.png" className="content-star" alt=""/>
-                    <img src="./img/star_icon_y.png" className="content-star" alt=""/>
-                    <img src="./img/star_icon_y.png" className="content-star" alt=""/>
+                    <img src={start_png} className="content-star" alt=""/>
+                    <img src={start_png} className="content-star" alt=""/>
+                    <img src={start_png} className="content-star" alt=""/>
+                    <img src={start_png} className="content-star" alt=""/>
+                    <img src={start_png} className="content-star" alt=""/>
                     <span> (5) </span>
                 </div>
                 <span className="fs15 fr"> 充电:2.0元/度 </span>
             </div>
             <div className="padding">
                 <div className="fl">
-                    <img src="./img/star_icon_y.png" alt="" className="content-star"/>
+                    <img src={address_png} alt="" className="content-star"/>
                     <span className="fs15 color_72"> 联航路1588号 </span>
                 </div>
                 <div className="fr">
-                    <img src="./img/star_icon_y.png" alt="" className="content-oil"/>
+                    <img src={pile_png} alt="" className="content-oil"/>
                     <span className="fs18 color_red"> 0 </span>
                     <span className="fs15 color_72"> /1 </span>
                 </div>
             </div>
             <div className="padding h20 border_t mt10 cf">
                 <span className="fs15 color_blue fl"> 详情 </span>
-                <img src="./img/star_icon_y.png" className="content-star fr" alt=""/>
-            </div>
-        </div> ;
-    }
-});
-
-var BusListCell = React.createClass({
-    render: function() {
-        return <div className="list_bus_content">
-            <div className="bus_top">
-                <span className="fs15 fl"> {this.props.time}  {this.props.line_name} </span>
-                <span className="bus_work fr"> 工作日 </span>
-            </div>
-            <div className="fl ">
-
-
+                <img src={right_png} className="content-star fr" alt=""/>
             </div>
         </div> ;
     }
