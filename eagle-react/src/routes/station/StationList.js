@@ -69,6 +69,7 @@ class StationList extends Component {
         return (
             <div className="list_bg">
 
+
                 <Link to="/" >
                     <StationListCell station_name = "863软件园11号别墅" dis = "0.13km" > </StationListCell>
                 </Link>

@@ -31,21 +31,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/eagle-react/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.37037">
+            <state vertical-scroll-proportion="0.42222223">
               <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StationList.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="StationList.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/eagle-react/src/routes/station/StationList.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.4648526">
-              <caret line="29" column="17" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="71" column="0" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -93,8 +93,8 @@
         <option value="$PROJECT_DIR$/src/routes/app/App.js" />
         <option value="$PROJECT_DIR$/src/routes/About.js" />
         <option value="$PROJECT_DIR$/src/routes/station/StationList.js" />
-        <option value="$PROJECT_DIR$/eagle-react/.gitignore" />
         <option value="$PROJECT_DIR$/eagle-react/src/routes/station/StationList.js" />
+        <option value="$PROJECT_DIR$/eagle-react/.gitignore" />
       </list>
     </option>
   </component>
@@ -448,21 +448,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/eagle-react/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.37037">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/eagle-react/src/routes/station/StationList.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.4648526">
-          <caret line="29" column="17" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="71" column="0" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eagle-react/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.42222223">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
