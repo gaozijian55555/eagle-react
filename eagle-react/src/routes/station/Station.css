@@ -1,0 +1,65 @@
+body, div, dl, dt, dd, ol, ul, li,h1, h2, h3, h4, h5, h6,pre,form,img, p,tr, th, td {
+    margin: 0;
+    padding: 0;
+}
+
+
+a{color:#333;text-decoration:none;}
+a:hover{color:none;text-decoration:none;}
+a:link{
+    text-decoration: none;
+    color:none;
+}
+a:visited {
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+a:active{
+    text-decoration: none;
+}
+
+/******** 公共 *********/
+.dis_lib { display: inline-block; }
+.aaa{ display: block; }
+.cf { clear: both; }
+.fl { float: left; }
+.fr { float: right; }
+.mt10 { margin-top: 30px; }
+.padding { padding: 10px 30px 5px 30px; }
+.fs18 { font-size: 18px; line-height: 18px; }
+.fs16 { font-size: 16px; line-height: 16px; }
+.fs15 { font-size: 15px; line-height: 15px; }
+.color_72 { color: #727272;}
+.color_red { color: red; }
+.color_blue { color: #2b81af }
+.h20 { height: 20px; }
+.border_t { border-top-style:solid; border-width: .6px; border-color: #cfcfcf; }
+
+
+/******* 站点列表 ********/
+.list_bg { height: 50rem; background-color: #efefef; padding: 10px 20px 10px 20px; }
+.list-content { border: 1px solid #cfcfcf; border-radius: 10px; background-color: #ffffff; height: 155px; padding-top: 10px; margin: 10px 0 10px 0;}
+.content-star { width: 20px; height: 20px; }
+.content-oil { width: 20px; height: 20px; right: 20px; }
+
+
+
+/********* 队长大巴 ********/
+.list_bus_content { border: 1px solid #cfcfcf; height: 100px; background-color: white; margin: 10px 0 10px 0;}
+.bus_top { height: 18px; background-color: #efefef; padding: 10px 30px 10px 30px; border-bottom: 1px solid #cfcfcf; }
+.bus_work { width: 50px; height: 16px; border: 1px solid #e78d00; background-color: #f5eac6;
+    border-radius: 2px; font-size: 8px; line-height: 16px; color: #e78d00; text-align: center; }
+.bus_station_start {  }
+
+
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
