@@ -12,6 +12,7 @@ export default React.createClass({
                     <li><Link to="/about">About</Link></li>
                     <li><Link to="/station_list">Station List</Link></li>
                     <li><Link to="/bus_list">Bus List</Link></li>
+                    <li><Link to="/charge">Charge</Link></li>
                 </ul>
             </div>
         )

@@ -1,0 +1,38 @@
+/*
+* 充电方式选择界面
+*/
+.title {
+    color: #333333;
+    font-size: 1.6rem;
+    line-height: 4.5rem;
+    /*IE5.5  将对象呈递为内联对象，但是对象的内容作为块对象呈递。旁边的内联对象会被呈递在同一行内 */
+    display: inline-block;
+}
+
+.background_df {
+    background: #dfdfdf;
+}
+
+.background_while {
+    background: #ffffff;
+}
+
+.fr {
+    float: right;
+}
+
+.btn_close {
+    /*将对象从文档流中拖出，使用 left ， right ， top ， bottom
+               等属性相对于其最接近的一个最有定位设置的父对象进行绝对定位。*/
+    position: absolute;
+    /*由浮点数字和单位标识符组成的长度值 | 百分数。
+            必须定义 position 属性值为 absolute 或者 relative 此取值方可生效。请参阅 长度单位 。 */
+    right: 3%;
+    line-height: 4.6rem;
+    font-size: 1.6rem;
+}
+
+.p1 {
+   padding: 1rem;
+}
+
