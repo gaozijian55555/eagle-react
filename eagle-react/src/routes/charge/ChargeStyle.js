@@ -44,6 +44,8 @@ var MChargeStyle = React.createClass({
                 <div><span className="title"> {this.props.title} </span></div>
             </div>
             </div>;
+
+
         }
     }
 );
