@@ -1,0 +1,286 @@
+@charset "utf-8";
+/* CSS Document  text-decoration 去除文字底部的下划线*/
+a{color:#333;text-decoration:none;}
+a:hover{text-decoration:none;}
+a:link{
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+a:active{
+    text-decoration: none;
+}
+
+/******************************* style ***********************************************************/
+@media only screen and (max-width:1024px){
+    body{
+        margin:0 auto;}
+}
+
+body{ background: #eee;}
+
+/************************下面是公共样式**************************/
+.floatRight{
+    float: right;
+}
+
+.floatLeft{
+    float: left;
+}
+
+.clearBoth{
+    clear: both;
+}
+
+.chargeBusPading{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+}
+
+/************************下面是大巴列表的样式**************************/
+.chargeBusList{
+    border:0.1rem solid #dfdfdf;
+    border-radius: 10px;
+    margin: 10px 0px 0px;
+    margin-bottom: 15px;
+    background-color: white;
+    border-color: #dfdfdf;
+}
+
+.topLeftTitle{
+    margin-top: 10px;
+    padding-bottom: 25px;
+    color: black;
+    font-size: 20px;
+    border-bottom: 0.1rem solid #dfdfdf;
+}
+
+.topRightTitle{
+    margin-top: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    border-radius: 2px;
+    border: 0.1rem solid chocolate;
+    background-color: bisque;
+    color:chocolate;
+    font-size: 5px;
+}
+
+.addressBottom{
+    height: 69px;
+}
+
+/**左侧的起始及终点标记*/
+.lv_out{
+    margin-top: 10px;
+    padding-top: 5px;
+    position: absolute;
+    height: 45px;
+    background: #dfdfdf;
+    width: 4px;
+}
+/**采用伪元素 在某个布局前 后 插入新的内容*/
+.lv_out:before{content: ""; position: absolute; height: 10px; width: 10px; top:0; left: -3px; background: #4bae4f; border-radius: 5px;}
+.lv_out:after{content: ""; position: absolute; height: 10px; width: 10px; bottom:0; left: -3px; background: #f34235; border-radius:5px;}
+
+.fromAddressAlign{
+    margin-top: 5px;
+    display: block;
+    padding-left: 25px;
+    color: #727272;
+    font-size: 15px;
+}
+
+.toAddressAlign{
+    margin-top: 15px;
+    display: block;
+    padding-left: 25px;
+    color: #727272;
+    font-size: 15px;
+}
+
+.priceAlign{
+    margin-top: 10px;
+    display:block;
+    text-align: right;
+    color: black;
+    font-size: 15px;
+    padding-right:5px;
+}
+
+.minsAlign{
+    margin-top: 10px;
+    display:block;
+    text-align: right;
+    padding-right: 5px;
+    /*text-align: center;*/
+    color:  #727272;
+    font-size: 15px;
+}
+
+/***下面是队长大巴详情样式****/
+.details{
+    background-color: white;
+    padding-left: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-right: 20px;
+}
+
+.detailsTopBusImage{
+    padding-top: 2px;
+    width: 25px;
+    height: 30px;
+}
+
+.detailsArrowImage{
+    width: 38px;
+    height: 8px;
+    margin-left:20px;
+    margin-right: 20px;
+    padding-bottom: 20px;
+    vertical-align: middle;
+}
+
+.detailsAddress{
+    margin-left: 25px;
+    font-size: 25px;
+    color: #333333;
+    display:inline;
+    vertical-align: top;
+}
+
+.detailsTopBusInfo{
+    color: black;
+    font-size: 15px
+}
+
+.detailsBottm{
+
+}
+
+.captainExplain{
+    font-size: 18px;
+    color: #333333
+}
+
+.detailsUl{
+    padding-top: 5px;
+    padding-left: 20px;
+    list-style-type: disc;
+    font-size: 15px;
+    color: #727272;
+}
+
+.detailsMiddle{
+    margin-left: 19px;
+    padding-bottom: 25px;
+    border-left:5px solid #dfdfdf;
+    position: relative;
+}
+
+.detailsMiddleImage{
+    position: absolute;
+    left: -0.5rem;
+    height: 10px;
+    width: 10px;
+    background-size: cover;
+    border: 0.5rem solid #fff;
+}
+
+.detailsMiddleLeft{
+    margin-left: 9px;
+    /*padding-bottom: 15px;*/
+    padding-left: 30px;
+    position: relative;
+}
+
+.border_none{ padding-bottom: 0; border-color: #fff;}
+
+.detailsMiddle_LeftBorder{
+    margin-left: 5px;
+    padding-bottom: 25px;
+    border-left:2px solid #dfdfdf;
+    position: relative;
+}
+
+
+.detailsMiddle_Origin:before{ content: "";
+    position: absolute;
+    left: -0.75rem;
+    top:-0.15rem;
+    background:#dfdfdf;
+    height: 6px;
+    width: 6px;
+    border-radius: 20px;
+    border:0.5rem solid #fff;
+}
+
+.detailsMiddle_start:before{ content: "始";
+    font-size: 10px;
+    position: absolute;
+    left: -1.0rem;
+    top:-0.6rem;
+    background-color: #4bae4f;
+    height: 15px;
+    width: 15px;
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+    border: 0.5rem solid #fff;
+}
+
+.detailsMiddle_end:before{ content: "终";
+    font-size: 10px;
+    position: absolute;
+    left: -1.2rem;
+    top:-0.6rem;
+    background-color: red;
+    height: 15px;
+    width: 15px;
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+    border: 0.5rem solid #fff;
+}
+
+.detailsMiddleStartImage{
+    background: url(../../images/origin.png);
+}
+
+.detailsMiddleEndImage{
+    background: url(../../images/end_point.png) no-repeat;
+}
+
+.detailsMiddleEnd{
+    border: 0.5rem;
+}
+
+.detailsMiddleStartName{
+    color: black;
+    font-size: 10px;
+    margin-left: 5px;
+}
+
+.detailsBusStartTime{
+    color: #727272;
+    font-size:10px;
+    margin-left: 25px;
+}
+
+.detailsMiddleAddress {
+    margin-top: 5px;
+    color: #727272;
+    font-size: 10px;
+    display: block;
+    margin-left: 5px;
+}
