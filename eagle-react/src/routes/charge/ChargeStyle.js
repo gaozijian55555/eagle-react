@@ -50,6 +50,7 @@ var MChargeStyle = React.createClass({
                     <div className="color_33"><p>电压：</p><span className="color_99">{this.props.voltage}</span></div>
                     <div className="color_33"><p>额定功率：</p><span className="color_99">{this.props.power}</span></div>
                 </div>
+
             </div>
                 <div className="background_while hg25 f_s_14 color_99 bb_d8 mt_10">
                     <div className="fl hg25">
