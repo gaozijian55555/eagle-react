@@ -36,7 +36,7 @@ class BusList extends Component {
         return (
             <div className="list_bg">
 
-             <Link to="/">
+             <Link to="/bus_Details">
                     <HelloComponent line_name="云部落大巴1号线" time = "07:30" fromAddress = "云部落TMT园区西南门" toAddress="金榜世家6期(西北门)"/>
              </Link>
 
