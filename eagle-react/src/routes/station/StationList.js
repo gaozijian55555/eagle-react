@@ -65,14 +65,22 @@ class StationList extends Component {
         };
     }
 
-    componentDidMount() {
-        // 请求站点列表数据
+    componentWillMount() {
+        //出生了，可以给我数据和设置我的状态
         fetchStationList(1, 'distance').then(res => {
             this.setState({
                 datas: res.items
             })
         })
     }
+    // componentDidMount() {
+    //     请求站点列表数据
+    //     fetchStationList(1, 'distance').then(res => {
+    //         this.setState({
+    //             datas: res.items
+    //         })
+    //     })
+    // }
 
     render() {
         return (

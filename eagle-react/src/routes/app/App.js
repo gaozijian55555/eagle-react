@@ -2,12 +2,18 @@
 //commit
 import React from 'react'
 import { Link } from 'react-router'
-
+import Button from 'antd/lib/button';
+import 'antd/lib/button/style';
+import 'antd/dist/antd.css';
 export default React.createClass({
-    render() {
+    hahaha:function () {
+        alert("王新伟");
+    },
+    render: function() {
         return (
             <div>
-                <h1> Eagle-React Host View</h1>
+                <Button onClick={this.hahaha}>点我啊</Button>>
+                 <h1> Eagle-React Host View</h1>
                 <ul role="nav">
                     <li><Link to="/" property="">Home</Link></li>
                     <li><Link to="/about">About</Link></li>
