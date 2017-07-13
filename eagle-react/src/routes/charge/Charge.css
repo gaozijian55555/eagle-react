@@ -19,12 +19,12 @@
 }
 
 .title_cell {
-    height: 4.5rem;
+    height: 80px;
     background: #f5f5f5;
     text-align: center;
     position: relative;
     border-bottom: 1px #d8d8d8 solid;
-    font-size: 1.4rem;
+    font-size: 20px;
 }
 
 .fr {
@@ -38,24 +38,24 @@
     /*由浮点数字和单位标识符组成的长度值 | 百分数。
             必须定义 position 属性值为 absolute 或者 relative 此取值方可生效。请参阅 长度单位 。 */
     right: 3%;
-    line-height: 4.6rem;
-    font-size: 1.6rem;
+    line-height: 80px;
+    font-size: 20px;
 }
 
 .p1 {
-    padding: 1rem;
+    padding: 10px;
 }
 
 .hg25 {
-    line-height: 2.5rem;
+    line-height: 40px;
 }
 
 .f_s_14 {
-    font-size: 1.4rem;
+    font-size: 20px;
 }
 
 .f_s_12 {
-    font-size: 1.2rem;
+    font-size: 16px;
 }
 
 .bb_d8 {
@@ -63,7 +63,7 @@
 }
 
 .p20 {
-    padding: 2rem;
+    padding: 20px;
 }
 
 .f_w_700 {
@@ -75,7 +75,7 @@
 }
 
 .mb_08 {
-    margin-bottom: 0.8rem;
+    margin-bottom: 16px;
 }
 
 .m00_a {
@@ -97,7 +97,7 @@
 }
 
 .mt_10 {
-    margin-top: 1rem;
+    margin-top: 20px;
 }
 
 .fl {
@@ -106,10 +106,10 @@
 
 .money_icon {
     background: url(../../images/moneyhui_icon.png);
-    margin-top: 0.4rem;
-    margin-right: 0.4rem;
-    width: 1.56rem;
-    height: 1.56rem;
+    margin-top: 10px;
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
     background-size: cover;
 }
 
@@ -122,7 +122,7 @@
 }
 
 .l_h_25 {
-    line-height: 2.5rem;
+    line-height: 40px;
 }
 
 .m_l_7p {
@@ -130,42 +130,42 @@
 }
 
 .mb_40 {
-    margin-bottom: 4rem;
+    margin-bottom: 80px;
 }
 
 .phone_btn {
     background: url(../../images/phone_btn.png);
     background-size: cover;
-    width: 1.5rem;
-    height: 1.5rem;
-    margin-top: 0.5rem;
+    width: 20px;
+    height: 20px;
+    margin-top: 10px;
     display: inline-block;
 }
 
 .charging_start_btn {
     background: #009ad5;
-    height: 5rem;
+    height: 100px;
     /*未支持。对象定位遵从绝对(absolute)方式。但是要遵守一些规范 */
     position: fixed;
     bottom: 0px;
     width: 100%;
     color: #ffffff;
-    font-size: 1.8rem;
-    line-height: 5rem;
+    font-size: 38px;
+    line-height: 100px;
 }
 
 .m_r_15 {
-    margin-right: 1.5rem;
+    margin-right: 30px;
 }
 
 .sg {
-    height: 1rem;
+    height: 20px;
     width: 1px;
     background: #d8d8d8;
-    margin-left: 0.6rem;
-    margin-top: 0.7rem;
+    margin-left: 10px;
+    margin-top: 18px;
     display: inline-block;
-    margin-right: 2.4rem;
+    margin-right: 40px;
     float: right;
 }
 
