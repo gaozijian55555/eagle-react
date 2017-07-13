@@ -18,7 +18,7 @@ function TopComponent(props, /*context*/) {
         </div>
 
         <div className="detailsTopBusInfo">
-            <p>线路名称: 云部落大巴1号线 (云部落TMT园区西南门 - 金榜世家6期(西北门)</p>
+            <p></p>
             <p>车次编号: 1001</p>
             <p>发车时间: 17:45 (工作日)</p>
             <p>票价: 0.1元/次</p>

@@ -85,7 +85,9 @@ class StationList extends Component {
                         )
                     })}
                 </Link>
+                <div className="bg-bottom"></div>
             </div>
+
         );
     }
 }

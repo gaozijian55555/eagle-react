@@ -16,5 +16,7 @@
   },
   "devDependencies": {
     "antd-mobile": "^1.4.2"
-  }
+  },
+  "homepage" : "https://github.com/gaozijian55555/eagle-react.git"
+
 }
