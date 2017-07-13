@@ -2,7 +2,6 @@
  * Created by WXW on 2017/7/11.
  */
 import React, {Component} from 'react';
-import '../station/Station.css';
 import {Link} from 'react-router'
 import './BusList.css'
 import greenCoach from '../../images/green_coach_icon.png'
@@ -74,7 +73,7 @@ function BottomComponent(props, /*context*/) {
     </div>
 }
 
-class BusDetails extends Component {
+export default class BusDetails extends Component {
     render() {
         return (
             <div className="list_bg">
@@ -85,5 +84,3 @@ class BusDetails extends Component {
         )
     }
 }
-
-export default BusDetails;

@@ -37,7 +37,7 @@ var MChargeStyle = React.createClass({
             return <div>
             <div className="title_cell">
                 <span className="title"> {this.props.title} </span>
-                <span className="btn_close fr" onclick={window.close()}> {this.props.titleRight} </span>
+                <span className="btn_close fr" onclick={ window.close() }> {this.props.titleRight} </span>
             </div>
 
             <div className="background_while hg25 f_s_14 bb_d8 p20">
@@ -60,12 +60,10 @@ var MChargeStyle = React.createClass({
                     <div className="w_55 d_i_b l_h_25 m_l_7p">{this.props.cost}</div>
                 </div>
                 <div className="background_while hg25 bb_d8 mb_40 f_s_12">若有疑问，请拨打{this.props.callNumber}
-                <a className="phone_btn fr m_r_15"></a><i className="sg"></i>
+                <a className="phone_btn fr m_r_15" href={this.props.callNumber}></a><i className="sg"></i>
                 </div>
                 <div className="charging_start_btn t_a_c">立即充电</div>
             </div>;
-
-
         }
     }
 );

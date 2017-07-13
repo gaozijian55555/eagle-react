@@ -56,7 +56,7 @@ var StationListCell = React.createClass({
     }
 });
 
-class StationList extends Component {
+export default class StationList extends Component {
 
     constructor(props) {
         super(props);
@@ -65,26 +65,37 @@ class StationList extends Component {
         };
     }
 
-    componentDidMount() {
-        // 请求站点列表数据
+    componentWillMount() {
+        //出生了，可以给我数据和设置我的状态
         fetchStationList(1, 'distance').then(res => {
             this.setState({
                 datas: res.items
             })
         })
     }
+    // componentDidMount() {
+    //     请求站点列表数据
+    //     fetchStationList(1, 'distance').then(res => {
+    //         this.setState({
+    //             datas: res.items
+    //         })
+    //     })
+    // }
 
     render() {
         return (
             <div className="list_bg">
-                {/* <div hidden = {this.state.datas.count}> 正在加载... </div> */}
                 <Link to="/">
+                    {/* <div hidden = {this.state.datas.count}> 正在加载... </div> */}
                     {this.state.datas.map((item) => {
                         return (
-                            <StationListCell datas={item} > </StationListCell>
+                            <Link to='/station_Deatils'>
+                                <StationListCell datas={item}> </StationListCell>
+                            </Link>
                         )
                     })}
                 </Link>
+
                 <div className="bg-bottom"></div>
             </div>
 
@@ -92,4 +103,4 @@ class StationList extends Component {
     }
 }
 
-export default StationList;
+// export default StationList;

@@ -19,6 +19,7 @@ import 'antd-mobile/lib/icon/style'
 export default React.createClass({
 
     getInitialState() {
+
         return {
             selectedTab: '/station_list',
         };
@@ -49,10 +50,9 @@ export default React.createClass({
                     key={m.url}
                     selected={this.state.selectedTab===m.url}
                     onPress={() => {
-            this.setState({
-              selectedTab: m.url,
-            });
-
+                        this.setState({
+                            selectedTab: m.url,
+                        });
           }}>
                     {this.renderContent()}
                 </TabBar.Item>
@@ -74,5 +74,6 @@ export default React.createClass({
                 {menus}
             </TabBar>
         );
+
     },
 });
