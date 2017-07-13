@@ -44,7 +44,7 @@ body{ background: #eee;}
 
 /************************下面是大巴列表的样式**************************/
 .chargeBusList{
-    border:0.1rem solid #dfdfdf;
+    border:0.1px solid #dfdfdf;
     border-radius: 10px;
     margin: 10px 0px 0px;
     margin-bottom: 15px;
@@ -57,7 +57,7 @@ body{ background: #eee;}
     padding-bottom: 25px;
     color: black;
     font-size: 20px;
-    border-bottom: 0.1rem solid #dfdfdf;
+    border-bottom: 0.1px solid #dfdfdf;
 }
 
 .topRightTitle{
@@ -67,7 +67,7 @@ body{ background: #eee;}
     padding-top: 1px;
     padding-bottom: 1px;
     border-radius: 2px;
-    border: 0.1rem solid chocolate;
+    border: 0.1px solid chocolate;
     background-color: bisque;
     color:chocolate;
     font-size: 5px;
