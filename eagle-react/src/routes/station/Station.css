@@ -5,10 +5,9 @@ body, div, dl, dt, dd, ol, ul, li,h1, h2, h3, h4, h5, h6,pre,form,img, p,tr, th,
 
 
 a{color:#333;text-decoration:none;}
-a:hover{color:none;text-decoration:none;}
+a:hover{text-decoration:none;}
 a:link{
     text-decoration: none;
-    color:none;
 }
 
 a:visited {
