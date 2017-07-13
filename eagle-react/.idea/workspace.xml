@@ -58,8 +58,8 @@
       <file leaf-file-name="App.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/routes/app/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1120">
-              <caret line="57" column="17" selection-start-line="57" selection-start-column="17" selection-end-line="57" selection-end-column="17" />
+            <state relative-caret-position="1320">
+              <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
               <folding>
                 <element signature="e#27#52#0" expanded="true" />
               </folding>
@@ -182,7 +182,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-265" />
+    <option name="x" value="53" />
     <option name="y" value="23" />
     <option name="width" value="1561" />
     <option name="height" value="722" />
@@ -551,15 +551,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1499670406326</updated>
-      <workItem from="1499754568679" duration="46699000" />
+      <workItem from="1499754568679" duration="46866000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46699000" />
+    <option name="totallyTimeSpent" value="46866000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-265" y="23" width="1561" height="722" extended-state="0" />
+    <frame x="53" y="23" width="1561" height="722" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18571429" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -985,8 +985,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/routes/app/App.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1120">
-          <caret line="57" column="17" selection-start-line="57" selection-start-column="17" selection-end-line="57" selection-end-column="17" />
+        <state relative-caret-position="1320">
+          <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
           <folding>
             <element signature="e#27#52#0" expanded="true" />
           </folding>
