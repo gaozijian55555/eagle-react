@@ -20,6 +20,8 @@ a:active{
     text-decoration: none;
 }
 
+body{ background: #efefef;}
+
 /******** 公共 *********/
 .dis_lib { display: inline-block; }
 .aaa{ display: block; }
@@ -54,6 +56,109 @@ a:active{
 .bus_station_start {  }
 
 
+/********* 站点详情样式 ********/
+.stationDeatils_TopList{
+    background-color: white;
+    border-bottom: 0.1px solid #dfdfdf;
+}
+
+.stationDeatils_Bottom{
+    margin-top: 15px;
+    background-color: white;
+    border-top: 0.1px solid #dfdfdf;
+}
+
+.stationDeatils_BottomList{
+    line-height: 34px;
+    background-color: white;
+    border-bottom: 0.1px solid #dfdfdf;
+}
+
+.stationDeatils_TopAddressIcon {
+    width: 12px;;
+    height: 15px;
+    padding-left: 12px;
+    padding-top: 10px;
+}
+
+.stationDeatils_phoneRightLine{
+    margin-left: 10px;
+    content: "";
+    border-left: 0.1px solid #dfdfdf;
+}
+
+.stationDeatils_evaluate{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top: 0.1px solid #dfdfdf;
+    padding-right: 10px;
+}
+
+.stationDeatils_introduce{
+    clear: both;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top: 0.1px solid #dfdfdf;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.stationDeatils_address {
+    position:absolute;
+    padding-top: 8px;
+    padding-left: 12px;
+}
+
+.stationDeatils_phoneIcon{
+    width: 18px;;
+    height: 18px;
+}
+
+.stationDeatils_phoneNumber{
+    padding-left: 35px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #dfdfdf;
+}
+
+.stationDeatils_distance{
+    text-align: center;
+    display: block;
+    padding-top: 5px;
+    margin: 0 auto;
+}
+
+.stationDeatils_Top{
+    position:relative;
+}
+
+.stationDeatils_distanceLeftDiv{
+    float: left;
+    width: 70%;
+}
+
+.stationDeatils_distanceRightDiv{
+    width: 20%;
+}
+
+.stationDeatils_distanceDiv{
+    padding-top: 8px;
+    float: right;
+    margin-right: 20px;
+}
+
+.stationDeatils_distanceIcon{
+    display: block;
+    margin: 0 auto;
+    width: 28px;;
+    height: 35px;
+}
+
+.stationDeatils_BottomPileIcon {
+    width: 40px;;
+    height: 15px;
+    padding-top: 10px;
+}
 
 @keyframes App-logo-spin {
     from {

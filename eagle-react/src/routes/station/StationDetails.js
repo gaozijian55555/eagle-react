@@ -1,90 +1,105 @@
-import React from 'react'
-import { Link } from 'react-router'
-import 'antd-mobile/lib/list/style'
-
-// import { List } from 'antd-mobile';
-
-import List from 'antd-mobile/lib/list'
-// import {Menu} from './Menu'
-import 'antd-mobile/lib/list/style'
-import 'antd-mobile/dist/antd-mobile.css'
-const Item = List.Item;
-const Brief = Item.Brief;
-
-
-export default class ListExample extends React.Component {
-    state = {
-        disabled: false,
+/**  * Created by WXW on 2017/7/12.  */
+import React, {Component} from 'react';
+import {Link} from 'react-router'
+import './Station.css';
+import start_png from '../../images/star_icon_y.png'
+import address_png from '../../images/site_icon.png'
+import pile_png from '../../images/Community_Serve_List.png'
+import right_png from '../../images/Right_arrow_btn.png'
+import phoneIcon from '../../images/phone_btn.png'
+class TopComponent extends React.Component {
+    callPhone() {
+        alert("hahaha")
     }
+
     render() {
-        return (<div>
-            <List renderHeader={() => '基本样式'} className="my-list">
-                <Item extra={'内容内容'}>标题文字</Item>
-            </List>
-            <List renderHeader={() => '带副标题'} className="my-list">
-                <Item arrow="horizontal" multipleLine>
-                    标题文字 <Brief>副标题</Brief>
-                </Item>
-                <Item
-                    arrow="horizontal"
-                    multipleLine
-                    onClick={() => {}}
-                    platform="android"
-                >
-                    ListItem （Android）<Brief>设置了Click事件会有material水波纹点击效果</Brief>
-                </Item>
-                <Item
-                    arrow="horizontal"
-                    thumb="https://zos.alipayobjects.com/rmsportal/dNuvNrtqUztHCwM.png"
-                    multipleLine
-                    onClick={() => {}}
-                >
-                    标题文字 <Brief>副标题</Brief>
-                </Item>
-            </List>
-            <List renderHeader={() => '右侧自定义（无内容 / 文字 / 图片）'} className="my-list">
-                <Item>标题文字</Item>
-                <Item arrow="horizontal" onClick={() => {}}>标题文字</Item>
-                <Item extra="内容内容" arrow="horizontal" onClick={() => {}}>标题文字</Item>
-                <Item extra="10:30" align="top" thumb="https://zos.alipayobjects.com/rmsportal/dNuvNrtqUztHCwM.png" multipleLine>
-                    标题文字 <Brief>副标题</Brief>
-                </Item>
-            </List>
-            <List renderHeader={() => '垂直居中对齐'} className="my-list">
-                <Item multipleLine extra="内容内容">
-                    标题文字 <Brief>副标题</Brief>
-                </Item>
-            </List>
-            <List renderHeader={() => '左侧带图标'}>
-                <Item
-                    thumb="https://zos.alipayobjects.com/rmsportal/dNuvNrtqUztHCwM.png"
-                    arrow="horizontal"
-                    onClick={() => {}}
-                >我的钱包</Item>
-                <Item thumb="https://zos.alipayobjects.com/rmsportal/UmbJMbWOejVOpxe.png" arrow="horizontal">我的花销占比</Item>
-            </List>
-            <List renderHeader={() => '文字换行'} className="my-list">
-                <Item data-seed="logId">单行模式，文字超长则隐藏；文本内容文本内容文本内容文本内容</Item>
-                <Item wrap>多行模式，文字超长则换行；文本内容文本内容文本内容文本内容文本内容文本内容</Item>
-                <Item extra="内容内容" multipleLine align="top" wrap>
-                    多行标题文字超长直接折行，文字可能比较长、文字可能比较长、
-                </Item>
-                <Item extra="没有箭头" arrow="empty" className="spe" wrap>
-                    极个别情况下，单行标题文字可能比较长，文字可能比较长、文字可能比较长、靠近右边会折行
-                </Item>
-            </List>
-            <List renderHeader={() => '其他'} className="my-list">
-                <Item disabled={this.state.disabled} extra="" onClick={() => { console.log('click', this.state.disabled); this.setState({ disabled: true }); }}>点击禁用</Item>
-                <Item>
-                    <select defaultValue="1">
-                        <option value="1">这是原生 html select</option>
-                        <option value="2" disabled>不可选</option>
-                        <option value="3">选项3</option>
-                    </select>
-                </Item>
-            </List>
-        </div>);
+        return (
+            <div className="stationDeatils_TopList">
+                <div className="stationDeatils_distanceLeftDiv">
+                    <div>
+                        <img src={address_png} className="stationDeatils_TopAddressIcon" alt=""/>
+                        <span className="stationDeatils_address">
+                        联航路1588号产业楼公寓14栋102室
+                    </span>
+                    </div>
+                    <div className="stationDeatils_phoneNumber">
+                        20000012
+                        <span className="stationDeatils_phoneRightLine">
+                    </span>
+                        <button onClick={this.callPhone}>
+                            <img src={phoneIcon} className="stationDeatils_phoneIcon" alt=""/>
+                        </button>
+                    </div>
+                </div>
+
+                <div className="stationDeatils_distanceDiv stationDeatils_distanceRightDiv">
+                    <img src={address_png} className="stationDeatils_distanceIcon" alt=""/>
+                    <p className="stationDeatils_distance">0.15KM</p>
+                </div>
+
+                <div className="stationDeatils_introduce">
+                    内部使用站点内部使用站点内部使用站点内部使用站点内部使用站点内部使用站点内部使用站点内部使用站点内部使用站点内部使用站点内部使用站点
+                </div>
+
+                <div className="stationDeatils_evaluate">
+                    <img src={pile_png} className="stationDeatils_BottomPileIcon" alt=""/>
+                    <span> 评价  </span>
+                    <img src={start_png} className="content-star" alt=""/>
+                    <img src={start_png} className="content-star" alt=""/>
+                    <img src={start_png} className="content-star" alt=""/>
+                    <img src={start_png} className="content-star" alt=""/>
+                    <img src={start_png} className="content-star" alt=""/>
+                    <span> (5) </span>
+                    <img src={right_png} className="content-right fr" alt=""/>
+                </div>
+            </div>
+        );
     }
 }
 
-// ReactDOM.render(<ListExample />, null);
+class BottomComponent extends React.Component {
+    render() {
+        return (
+            <div className="stationDeatils_Bottom">
+                <div className="stationDeatils_BottomList">
+                    <img src={pile_png} className="stationDeatils_BottomPileIcon" alt=""/>
+                    <span >充电桩数:</span>
+                </div>
+                <div className="stationDeatils_BottomList">
+                    <img src={pile_png} className="stationDeatils_BottomPileIcon" alt=""/>
+                    <span >支付方式:</span>
+                </div>
+                <div className="stationDeatils_BottomList">
+                    <img src={pile_png} className="stationDeatils_BottomPileIcon" alt=""/>
+                    <span >开放时间</span>
+                </div>
+                <div className="stationDeatils_BottomList">
+                    <img src={pile_png} className="stationDeatils_BottomPileIcon" alt=""/>
+                    <span >充电费用</span>
+                </div>
+                <div className="stationDeatils_BottomList">
+                    <img src={pile_png} className="stationDeatils_BottomPileIcon" alt=""/>
+                    <span >停车费用</span>
+                </div>
+            </div>
+        );
+    }
+}
+
+export default class stationDetailsComponent extends React.Component {
+    render() {
+        return (
+            // style={{backgroundColor: "green"}}
+            <div className="stationDeatils_List">
+                <TopComponent/>
+                <BottomComponent/>
+            </div>
+        );
+    }
+}
+
+TopComponent.propTypes = {
+    address: React.PropTypes.string.isRequired,
+    phoneNumber: React.PropTypes.string.isRequired,
+    distance: React.PropTypes.string.isRequired,
+}
