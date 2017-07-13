@@ -41,12 +41,13 @@ body{ background: #efefef;}
 
 
 /******* 站点列表 ********/
-.list_bg { height: 50rem; background-color: #efefef; padding: 10px 20px 10px 20px; }
+.list_bg { background-color: #efefef; padding: 10px 20px 10px 20px; }
 .list-content { border: 1px solid #cfcfcf; border-radius: 10px; background-color: #ffffff; height: 155px; padding-top: 10px; margin: 10px 0 10px 0;}
 .content-star { width: 20px; height: 20px; }
 .content-oil { width: 34px; height: 16px; right: 20px; }
 .content-right { width: 10px; height: 16px; }
 .content-location { width: 14px; height: 16px; }
+.bg-bottom {height: 40px; }
 
 /********* 队长大巴 ********/
 .list_bus_content { border: 1px solid #cfcfcf; height: 100px; background-color: white; margin: 10px 0 10px 0;}

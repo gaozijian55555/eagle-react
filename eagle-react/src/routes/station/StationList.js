@@ -85,15 +85,20 @@ export default class StationList extends Component {
     render() {
         return (
             <div className="list_bg">
-                {/* <div hidden = {this.state.datas.count}> 正在加载... </div> */}
+                <Link to="/">
+                    {/* <div hidden = {this.state.datas.count}> 正在加载... </div> */}
                     {this.state.datas.map((item) => {
                         return (
-                        <Link to='/station_Deatils'>
-                            <StationListCell datas={item} > </StationListCell>
-                        </Link>
+                            <Link to='/station_Deatils'>
+                                <StationListCell datas={item}> </StationListCell>
+                            </Link>
                         )
                     })}
+                </Link>
+
+                <div className="bg-bottom"></div>
             </div>
+
         );
     }
 }

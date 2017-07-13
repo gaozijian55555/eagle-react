@@ -18,3 +18,8 @@ let fetchStationList = (offset, order_type = '') => fetch('GET', 'parking_areas/
 export {
     fetchStationList,
 }
+
+/* 立即充电 */
+let fetchStartCharge = (sid, pid) => fetch('POST', '/charge/start.json', {
+
+});
