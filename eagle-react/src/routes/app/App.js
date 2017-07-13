@@ -2,27 +2,78 @@
 //commit
 import React from 'react'
 import { Link } from 'react-router'
-import Button from 'antd/lib/button';
-import 'antd/lib/button/style';
-import 'antd/dist/antd.css';
+
+import Button from 'antd-mobile/lib/button'
+import 'antd-mobile/lib/button/style'
+
+import TabBar from 'antd-mobile/lib/tab-bar'
+import {Menu} from './Menu'
+import 'antd-mobile/lib/tab-bar/style'
+import 'antd-mobile/dist/antd-mobile.css'
+
+import NavBar from 'antd-mobile/lib/nav-bar'
+import Icon from 'antd-mobile/lib/icon'
+import 'antd-mobile/lib/icon/style'
+
 export default React.createClass({
-    hahaha:function () {
-        <Link role="nav" to="/about"></Link>
-        alert('wwww')
+
+getInitialState() {
+        return {
+            selectedTab: '/station_list',
+        };
     },
-    render: function() {
+
+    renderContent() {
         return (
-            <div>
-                <Button onClick={this.hahaha}>点我啊</Button>>
-                 <h1> Eagle-React Host View</h1>
-                <ul role="nav">
-                    <li><Link to="/" property="">Home</Link></li>
-                    <li><Link to="/about">About</Link></li>
-                    <li><Link to="/station_list">Station List</Link></li>
-                    <li><Link to="/bus_list">Bus List</Link></li>
-                    <li><Link to="/charge">Charge</Link></li>
-                </ul>
-            </div>
+            <div>{this.props.children}</div>
+        );
+    },
+
+
+    click: function () {
+
+        this.context.router.push('/home');
+    },
+
+    renderMenu() {
+        let menus = [];
+        let i = 0;
+
+        for (i = 0; i < 3; i++) {
+            let m = Menu[i];
+            menus.push(
+                <TabBar.Item
+                    icon={{ uri: 'https://zos.alipayobjects.com/rmsportal/'+m.icon+'.png' }}
+                    selectedIcon={{ uri: 'https://zos.alipayobjects.com/rmsportal/'+m.selected+'.png' }}
+                    title={m.title}
+                    key={m.url}
+                    selected={this.state.selectedTab===m.url}
+                    onPress={() => {
+            this.setState({
+              selectedTab: m.url,
+            });
+
+          }}
+                >
+                    {this.renderContent()}
+                </TabBar.Item>
+            );
+        }
+        return menus;
+    },
+
+    render() {
+        let menus = this.renderMenu();
+        return (
+
+            <TabBar
+                unselectedTintColor="#949494"
+                tintColor="#33A3F4"
+                barTintColor="white"
+            >
+                {menus}
+            </TabBar>
         )
-    }
-})
+        ;
+    },
+});
