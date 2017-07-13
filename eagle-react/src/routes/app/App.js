@@ -7,7 +7,8 @@ import 'antd/lib/button/style';
 import 'antd/dist/antd.css';
 export default React.createClass({
     hahaha:function () {
-        alert("王新伟");
+        <Link role="nav" to="/about"></Link>
+        alert('wwww')
     },
     render: function() {
         return (

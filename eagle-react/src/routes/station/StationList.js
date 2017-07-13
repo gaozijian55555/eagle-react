@@ -56,7 +56,7 @@ var StationListCell = React.createClass({
     }
 });
 
-class StationList extends Component {
+export default class StationList extends Component {
 
     constructor(props) {
         super(props);
@@ -86,16 +86,16 @@ class StationList extends Component {
         return (
             <div className="list_bg">
                 {/* <div hidden = {this.state.datas.count}> 正在加载... </div> */}
-                <Link to="/">
                     {this.state.datas.map((item) => {
                         return (
+                        <Link to={{ pathname: '/station_Deatils', query: { name: 'ryan' }}}>
                             <StationListCell datas={item} > </StationListCell>
+                        </Link>
                         )
                     })}
-                </Link>
             </div>
         );
     }
 }
 
-export default StationList;
+// export default StationList;
