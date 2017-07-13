@@ -3,7 +3,6 @@
 import React from 'react'
 import { Link } from 'react-router'
 
-import Button from 'antd-mobile/lib/button'
 import 'antd-mobile/lib/button/style'
 
 import TabBar from 'antd-mobile/lib/tab-bar'
@@ -17,7 +16,7 @@ import 'antd-mobile/lib/icon/style'
 
 export default React.createClass({
 
-getInitialState() {
+    getInitialState() {
         return {
             selectedTab: '/station_list',
         };
@@ -49,13 +48,15 @@ getInitialState() {
                     key={m.url}
                     selected={this.state.selectedTab===m.url}
                     onPress={() => {
-            this.setState({
-              selectedTab: m.url,
-            });
+                        this.setState({
+                            selectedTab: m.url,
+                        });
 
-          }}
+                    }}
                 >
                     {this.renderContent()}
+                }
+
                 </TabBar.Item>
             );
         }
@@ -74,6 +75,6 @@ getInitialState() {
                 {menus}
             </TabBar>
         )
-        ;
+            ;
     },
 });
