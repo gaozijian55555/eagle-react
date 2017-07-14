@@ -1,6 +1,3 @@
-/**
- * Created by chenjinxin on 2017/3/24.
- */
 
 let baseUrl;
 

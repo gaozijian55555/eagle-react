@@ -21,6 +21,7 @@ var StationListCell = React.createClass({
     },
 
     render: function () {
+        var pile_fees = this.props.datas.pile_fees;
 
         return <div className="list-content">
             <div className="padding h20">
@@ -36,7 +37,7 @@ var StationListCell = React.createClass({
                     <img src={star_n_png} className="content-star" alt=""/>
                     <span className="fs16 color_72"> ({this.props.datas.comment_sum}) </span>
                 </div>
-                <span className="fs15 fr"> 充电:1.8元/度 </span>
+                <span className="fs15 fr"> 充电: {pile_fees.length?pile_fees[0].total_price:1.8}元/度 </span>
             </div>
             <div className="padding">
                 <div className="fl">

@@ -29,7 +29,7 @@ body{ background: #efefef;}
 .fl { float: left; }
 .fr { float: right; }
 .mt10 { margin-top: 30px; }
-.padding { padding: 10px 25px 5px 25px; }
+.padding { padding: 10px 20px 5px 20px; }
 .fs20 { font-size: 20px; line-height: 20px; }
 .fs18 { font-size: 18px; line-height: 18px; }
 .fs16 { font-size: 16px; line-height: 16px; }
@@ -42,8 +42,8 @@ body{ background: #efefef;}
 
 
 /******* 站点列表 ********/
-.list_bg { background-color: #f5f5f9; padding: 10px 20px 10px 20px; }
-.list-content { border: 1px solid #cfcfcf; border-radius: 10px; background-color: #ffffff; height: 155px; padding-top: 10px; margin: 10px 0 10px 0;}
+.list_bg { background-color: #f5f5f9; padding: 0px 10px 10px 10px; }
+.list-content { border: .6px solid #cfcfcf; border-radius: 10px; background-color: #ffffff; height: 155px; padding-top: 10px; margin: 10px 0 10px 0;}
 .content-star { width: 20px; height: 20px; }
 .content-oil { width: 34px; height: 16px; right: 20px; }
 .content-right { width: 10px; height: 16px; }
