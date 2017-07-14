@@ -80,10 +80,12 @@ body{ background: #efefef;}
 }
 
 .stationDeatils_PakingPrice{
-    margin-top: -35px;
     position: relative;
-    margin-left: 120px;
-    margin-right: 30px;
+    margin-left:125px;
+    /*margin-top: -35px;*/
+    /*position: relative;*/
+    /*margin-left: 120px;*/
+    /*margin-right: 30px;*/
 }
 
 
@@ -95,7 +97,7 @@ body{ background: #efefef;}
 .stationDeatils_BottomList{
     line-height: 34px;
     background-color: white;
-    border-top: 0.1px solid #dfdfdf;
+    border-top: 1px solid #dfdfdf;
 }
 
 .stationDeatils_FreePort{
@@ -122,11 +124,22 @@ body{ background: #efefef;}
 
 .stationDeatils_evaluate{
     padding-top: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
     border-top: 0.1px solid #dfdfdf;
     padding-right: 10px;
 }
 
+.stationDeatils_Nav_btn {
+    text-align: center;
+    background: #009ad5;
+    height: 100px;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    color: #ffffff;
+    font-size: 38px;
+    line-height: 100px;
+}
 .stationDeatils_introduce{
     clear: both;
     padding-top: 10px;
@@ -197,6 +210,11 @@ body{ background: #efefef;}
     width: 40px;;
     height: 15px;
     padding-top: 10px;
+}
+.stationDeatils_Arrows{
+    padding-top: 10px;
+    width: 10px;
+    height: 16px;
 }
 
 .stationDeatils_Pay{

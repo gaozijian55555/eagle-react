@@ -6,7 +6,7 @@ import start_png   from  '../../images/Star_Icon_y_big@2x.png'
 import address_png from  '../../images/site_icon.png'
 import pile_png    from  '../../images/Community_Serve_List.png'
 import right_png   from  '../../images/Right_arrow_btn.png'
-import phoneIcon   from  '../../images/phone_btn.png'
+import phoneIcon   from  '../../images/Call_Btn@2x.png'
 
 class TopComponent extends React.Component {
     callPhone() {
@@ -51,7 +51,7 @@ class TopComponent extends React.Component {
                     <img src={start_png} className="content-star" alt=""/>
                     <img src={start_png} className="content-star" alt=""/>
                     <span> (5) </span>
-                    <img src={right_png} className="content-right fr" alt=""/>
+                    <img src={right_png} className="stationDeatils_Arrows fr" alt=""/>
                 </div>
             </div>
         );
@@ -78,6 +78,9 @@ function PayTypeComponent(props, /*context*/) {
 }
 
 class BottomComponent extends React.Component {
+    startNav(){
+        alert("导航啦")
+    }
     render() {
         return (
             <div className="stationDeatils_Bottom">
@@ -122,7 +125,7 @@ class BottomComponent extends React.Component {
                         <span >停车费用:</span>
                     </div>
 
-                    <div className="floatRight stationDeatils_PakingPrice">
+                    <div className="stationDeatils_PakingPrice">
                         <p >06:00-18:00 10元/60分钟</p>
                         <p >18:00-06:00 10元/60分钟</p>
                         <p >实际收费以停车场收取为准实际收费以停车场收取为准实际收费以停车场收取为准</p>
@@ -131,8 +134,9 @@ class BottomComponent extends React.Component {
                         注: 导航过程中将使用腾讯地图
                     </div>
                 </div>
+                <div className="stationDeatils_Nav_btn" onClick={this.startNav}>导航
+                </div>
             </div>
-
         );
     }
 }
