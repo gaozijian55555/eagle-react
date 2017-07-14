@@ -7,14 +7,16 @@ import {Link} from 'react-router'
 import './BusList.css'
 
 function HelloComponent(props,/*context*/) {
-    return <div className="chargeBusList chargeBusPading">
-        <p className="topLeftTitle">
-            <span>{props.time}</span>
-            <span> {props.line_name}</span>
-            <span className="topRightTitle floatRight">工作日</span>
-        </p>
-
-        <div className="clearBoth addressBottom">
+    return <div className="chargeBusList">
+        <div className="chargeBusPading">
+            <p className="topLeftTitle">
+                <span>{props.time}</span>
+                <span> {props.line_name}</span>
+                <span className="topRightTitle floatRight">工作日</span>
+            </p>
+        </div>
+        <p className="topLine"></p>
+        <div className="clearBoth addressBottom chargeBusPading">
 
             <div className="floatLeft">
                 <div className="lv_out">
@@ -31,12 +33,12 @@ function HelloComponent(props,/*context*/) {
     </div>
 }
 
-class BusList extends Component {
+export default  class BusList extends Component {
     render() {
         return (
             <div className="list_bg">
 
-             <Link to="/bus_Details">
+             <Link to="/bus_details">
                     <HelloComponent line_name="云部落大巴1号线" time = "07:30" fromAddress = "云部落TMT园区西南门" toAddress="金榜世家6期(西北门)"/>
              </Link>
 
@@ -56,5 +58,3 @@ class BusList extends Component {
         );
     }
 }
-
-export default BusList;
