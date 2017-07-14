@@ -60,23 +60,24 @@ body{ background: #eee;}
     margin-top: 15px;
     padding-bottom: 15px;
     color: black;
-    font-size: 20px;
+    font-size: 17px;
 }
 
 .topRightTitle{
-    margin-top: 2px;
+    line-height: 15px;
     padding-left: 5px;
     padding-right: 5px;
     padding-top: 1px;
     padding-bottom: 1px;
     border-radius: 2px;
-    border: 0.1px solid chocolate;
+    border: 1px solid chocolate;
     background-color: bisque;
     color:chocolate;
-    font-size: 15px;
+    font-size: 10px;
 }
 
 .addressBottom{
+    padding-top: 5px;
     height: 69px;
 }
 
@@ -110,7 +111,7 @@ body{ background: #eee;}
 }
 
 .priceAlign{
-    margin-top: 10px;
+    margin-top: 7px;
     display:block;
     text-align: right;
     color: black;
@@ -119,7 +120,7 @@ body{ background: #eee;}
 }
 
 .minsAlign{
-    margin-top: 10px;
+    margin-top: 20px;
     display:block;
     text-align: right;
     padding-right: 5px;
@@ -129,25 +130,30 @@ body{ background: #eee;}
 }
 
 /***下面是队长大巴详情样式****/
+.details_List_bg{
+    margin-top: 15px;
+    background-color: #dfdfdf;
+
+}
+
 .details{
     background-color: white;
     padding-left: 20px;
     padding-top: 15px;
     padding-bottom: 15px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    /*margin-top: 15px;*/
+    margin-bottom: 10px;
     padding-right: 20px;
 }
 
 .detailsTopBusImage{
     position: absolute;
-    width: 20px;
-    height: 25px;
-
+    width: 18px;
+    height: 23px;
 }
 
 .detailsArrowImage{
-    width: 30px;
+    width: 23px;
     height: 8px;
     margin-left:20px;
     margin-right: 20px;
@@ -156,11 +162,11 @@ body{ background: #eee;}
 
 .detailsAddress{
     padding-left: 10px;
-    padding-top: 5px;
-    padding-bottom: 20px;
+    padding-top: 3px;
+    padding-bottom: 15px;
 
     margin-left: 25px;
-    font-size: 17px;
+    font-size: 15px;
     color: #333333;
 
     /*display:inline;*/

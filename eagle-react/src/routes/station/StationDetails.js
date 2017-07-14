@@ -119,7 +119,7 @@ class BottomComponent extends React.Component {
                     <span className="stationDeatils_Price">00:00-24:00 2.0元/度</span>
                 </div>
 
-                <div className="stationDeatils_BottomList clearBoth">
+                <div className="stationDeatils_BottomPaking clearBoth">
                     <div className="floatLeft">
                         <img src={pile_png} className="stationDeatils_BottomPileIcon" alt=""/>
                         <span >停车费用:</span>
@@ -128,13 +128,12 @@ class BottomComponent extends React.Component {
                     <div className="stationDeatils_PakingPrice">
                         <p >06:00-18:00 10元/60分钟</p>
                         <p >18:00-06:00 10元/60分钟</p>
-                        <p >实际收费以停车场收取为准实际收费以停车场收取为准实际收费以停车场收取为准</p>
-                    </div>
-                    <div className="clearBoth stationDeatils_Attention">
-                        注: 导航过程中将使用腾讯地图
+                        <p >实际收费以停车准</p>
                     </div>
                 </div>
-                <div className="stationDeatils_Nav_btn" onClick={this.startNav}>导航
+
+                <div className=" stationDeatils_Attention">
+                    注: 导航过程中将使用腾讯地图
                 </div>
             </div>
         );
@@ -148,6 +147,7 @@ export default class stationDetailsComponent extends React.Component {
             <div className="stationDeatils_List">
                 <TopComponent/>
                 <BottomComponent/>
+                <div className="stationDeatils_Nav_btn " onClick={this.startNav}>导航</div>
             </div>
         );
     }
