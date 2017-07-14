@@ -2,7 +2,7 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router'
 import './Station.css';
-import start_png   from  '../../images/star_icon_y.png'
+import start_png   from  '../../images/Star_Icon_y_big@2x.png'
 import address_png from  '../../images/site_icon.png'
 import pile_png    from  '../../images/Community_Serve_List.png'
 import right_png   from  '../../images/Right_arrow_btn.png'

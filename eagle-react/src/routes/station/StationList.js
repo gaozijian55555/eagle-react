@@ -24,7 +24,7 @@ var StationListCell = React.createClass({
 
         return <div className="list-content">
             <div className="padding h20">
-                <span className="fl fs20"> {this.props.datas.name} </span>
+                <span className="fl fs18"> {this.props.datas.name} </span>
                 <span className="fr fs15"> {parseFloat(this.props.datas.current_distance).toFixed(2)}km </span>
             </div>
             <div className="padding h20">
@@ -34,7 +34,7 @@ var StationListCell = React.createClass({
                     <img src={star_y_png} className="content-star" alt=""/>
                     <img src={star_y_png} className="content-star" alt=""/>
                     <img src={star_n_png} className="content-star" alt=""/>
-                    <span> ({this.props.datas.comment_sum}) </span>
+                    <span className="fs16 color_72"> ({this.props.datas.comment_sum}) </span>
                 </div>
                 <span className="fs15 fr"> 充电:1.8元/度 </span>
             </div>

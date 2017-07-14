@@ -29,13 +29,14 @@ body{ background: #efefef;}
 .fl { float: left; }
 .fr { float: right; }
 .mt10 { margin-top: 30px; }
-.padding { padding: 10px 30px 5px 30px; }
+.padding { padding: 10px 25px 5px 25px; }
+.fs20 { font-size: 20px; line-height: 20px; }
 .fs18 { font-size: 18px; line-height: 18px; }
 .fs16 { font-size: 16px; line-height: 16px; }
 .fs15 { font-size: 15px; line-height: 15px; }
 .color_72 { color: #727272;}
 .color_red { color: red; }
-.color_blue { color: #2b81af }
+.color_blue { color: #29a0f6 } /*#3b71af*/
 .h20 { height: 20px; }
 .border_t { border-top-style:solid; border-width: .6px; border-color: #cfcfcf; }
 
