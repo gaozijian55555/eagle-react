@@ -4,7 +4,7 @@
 
 let baseUrl;
 
-const imgBaseUrl = 'https://fuss10.elemecdn.com';
+const imgBaseUrl = 'https://';
 
  baseUrl = 'http://itstest.letscharge.cn/api/';
 //baseUrl = 'http://localhost:8002';
