@@ -89,7 +89,7 @@ export default class StationList extends Component {
                     {/* <div hidden = {this.state.datas.count}> 正在加载... </div> */}
                     {this.state.datas.map((item) => {
                         return (
-                            <Link to='/station_Deatils'>
+                            <Link to='/station_deatils'>
                                 <StationListCell datas={item}> </StationListCell>
                             </Link>
                         )

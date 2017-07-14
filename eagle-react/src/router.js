@@ -21,8 +21,8 @@ class RouterRoot extends Component {
                 <Route path="/station_list" component={StationList}/>
                 <Route path="/bus_list" component={BusList}/>
                 <Route path="/charge" component={Charge}/>
-                <Route path="/bus_Details" component={BusDetails}/>
-                <Route path="/station_Deatils" component={StationDetails}/>
+                <Route path="/bus_details" component={BusDetails}/>
+                <Route path="/station_deatils" component={StationDetails}/>
             </Router>
         )
     }

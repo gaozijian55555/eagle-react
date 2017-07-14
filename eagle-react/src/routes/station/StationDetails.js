@@ -2,11 +2,12 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router'
 import './Station.css';
-import start_png from '../../images/star_icon_y.png'
-import address_png from '../../images/site_icon.png'
-import pile_png from '../../images/Community_Serve_List.png'
-import right_png from '../../images/Right_arrow_btn.png'
-import phoneIcon from '../../images/phone_btn.png'
+import start_png   from  '../../images/star_icon_y.png'
+import address_png from  '../../images/site_icon.png'
+import pile_png    from  '../../images/Community_Serve_List.png'
+import right_png   from  '../../images/Right_arrow_btn.png'
+import phoneIcon   from  '../../images/phone_btn.png'
+
 class TopComponent extends React.Component {
     callPhone() {
         alert("hahaha")
@@ -57,31 +58,81 @@ class TopComponent extends React.Component {
     }
 }
 
+function PortNumberComponent(props, /*context*/) {
+    return <div className={props.portNumberClassName}>
+        <div >
+            <img src={pile_png} className="stationDeatils_PortIcon" alt=""/>
+            <span className="stationDeatils_FreePort">{props.freePort}</span>
+            <span className="stationDeatils_TotalPort">{props.totalPort}</span>
+        </div>
+    </div>
+}
+
+function PayTypeComponent(props, /*context*/) {
+    return <div className="stationDeatils_Pay">
+        <div >
+            <img src={pile_png} className="stationDeatils_PortIcon" alt=""/>
+            <span className="stationDeatils_PayType">{props.payType}</span>
+        </div>
+    </div>
+}
+
 class BottomComponent extends React.Component {
     render() {
         return (
             <div className="stationDeatils_Bottom">
+
                 <div className="stationDeatils_BottomList">
                     <img src={pile_png} className="stationDeatils_BottomPileIcon" alt=""/>
                     <span >充电桩数:</span>
+                    <PortNumberComponent freePort="30" totalPort="/100"
+                                         portNumberClassName="stationDeatils_PortNumber stationDeatils_DCPortNumber"/>
+                    <PortNumberComponent freePort="10" totalPort="/30"
+                                         portNumberClassName="stationDeatils_PortNumber stationDeatils_ACPortNumber"/>
                 </div>
+
                 <div className="stationDeatils_BottomList">
                     <img src={pile_png} className="stationDeatils_BottomPileIcon" alt=""/>
                     <span >支付方式:</span>
+                    <PayTypeComponent payType="微信"/>
                 </div>
-                <div className="stationDeatils_BottomList">
-                    <img src={pile_png} className="stationDeatils_BottomPileIcon" alt=""/>
-                    <span >开放时间</span>
+
+                <div className="stationDeatils_BottomList clearBoth">
+                    <div className="floatLeft">
+                        <img src={pile_png} className="stationDeatils_BottomPileIcon" alt=""/>
+                        <span >开放时间:</span>
+                    </div>
+
+                    <div className="stationDeatils_OpenTime">
+                        <p >06:00-18:00</p>
+                        <p >18:00-06:00</p>
+                    </div>
+
                 </div>
-                <div className="stationDeatils_BottomList">
+
+                <div className="clearBoth stationDeatils_BottomList">
                     <img src={pile_png} className="stationDeatils_BottomPileIcon" alt=""/>
-                    <span >充电费用</span>
+                    <span >充电费用:</span>
+                    <span className="stationDeatils_Price">00:00-24:00 2.0元/度</span>
                 </div>
-                <div className="stationDeatils_BottomList">
-                    <img src={pile_png} className="stationDeatils_BottomPileIcon" alt=""/>
-                    <span >停车费用</span>
+
+                <div className="stationDeatils_BottomList clearBoth">
+                    <div className="floatLeft">
+                        <img src={pile_png} className="stationDeatils_BottomPileIcon" alt=""/>
+                        <span >停车费用:</span>
+                    </div>
+
+                    <div className="floatRight stationDeatils_PakingPrice">
+                        <p >06:00-18:00 10元/60分钟</p>
+                        <p >18:00-06:00 10元/60分钟</p>
+                        <p >实际收费以停车场收取为准实际收费以停车场收取为准实际收费以停车场收取为准</p>
+                    </div>
+                    <div className="clearBoth stationDeatils_Attention">
+                        注: 导航过程中将使用腾讯地图
+                    </div>
                 </div>
             </div>
+
         );
     }
 }
