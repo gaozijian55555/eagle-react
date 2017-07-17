@@ -21,6 +21,8 @@ var MChargeStyle = React.createClass({
         },
 
         render: function () {
+            var pile_fees = this.props.data.pile_fees;
+            var interface_standards = this.props.data.interface_standards;
             return <div>
                 <div className="title_cell">
                     <span className="title"> {this.props.title} </span>
@@ -32,32 +34,32 @@ var MChargeStyle = React.createClass({
                     <div className="m00_a">
                         <div className="color_33"><p>充电桩编号：</p><span
                             className="color_99">{this.props.data.third_party_pile_id}</span></div>
-                        <div className="color_33"><p>充电桩类型：</p><span className="color_99">{this.props.data.dc_ac}</span>
+                        <div className="color_33"><p>充电桩类型：</p><span className="color_99">{this.props.data.dc_ac}充电桩</span>
                         </div>
                         <div className="color_33"><p>接口标准：</p><span
-                            className="color_99">{this.props.data.interface_standards.type}</span></div>
-                        <div className="color_33"><p>电&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp流：</p><span
-                            className="color_99">{this.props.data.ampere}</span></div>
-                        <div className="color_33"><p>电&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp压：</p><span
-                            className="color_99">{this.props.data.volta}</span></div>
-                        <div className="color_33"><p>额定功率：</p><span className="color_99">{this.props.data.power}</span>
+                            className="color_99">{interface_standards.length ? interface_standards[0].type : ''}</span></div>
+                        <div className="color_33"><p>电&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;流：</p><span
+                            className="color_99">{this.props.data.ampere}A</span></div>
+                        <div className="color_33"><p>电&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;压：</p><span
+                            className="color_99">{this.props.data.volta == null ? 0 : this.props.data.volta}V</span></div>
+                        <div className="color_33"><p>额定功率：</p><span className="color_99">{this.props.data.power}KW</span>
                         </div>
                     </div>
 
                 </div>
                 <div className="background_while hg25 f_s_14 color_99 bb_d8 mt_10">
-                    <div className="fl hg25">
+                    <div className="fl hg25 m_l_7p">
                         <div className="money_icon fl"></div>
                         <p className="d_i_b f_s_14 color_45">充电费用：</p>
                     </div>
-                    <div className="w_55 d_i_b l_h_25 m_l_7p">{this.props.data.pile_fees.fee_start}
-                        - {this.props.data.pile_fees.fee_end} {this.props.data.total_price}元/度
+                    <div className="w_55 d_i_b l_h_20">{pile_fees.length ? pile_fees[0].fee_start : ''}
+                        - {pile_fees.length ? pile_fees[0].fee_end : ''} {this.props.data.total_price}元/度
                     </div>
                 </div>
-                <div className="background_while hg25 bb_d8 mb_40 f_s_12">若有疑问，请拨打{this.props.callNumber}
+                <div className="background_while hg25 bb_d8 mb_40 f_s_12 m_l_7p">若有疑问，请拨打{this.props.callNumber}
                     <a className="phone_btn fr m_r_15" href={this.props.callNumber}></a><i className="sg"></i>
                 </div>
-                <div className="charging_start_btn t_a_c">立即充电</div>
+                <div className="charging_start_btn t_a_c mb_2">立即充电</div>
             </div>;
         }
     }
@@ -72,7 +74,7 @@ class ChargeStyle extends Component {
 
     componentWillMount() {
         fetchFindPile('ZC0123456789').then(res => {
-            this.setState({data: res.item})
+            this.setState({data: res.items})
         });
     }
 
