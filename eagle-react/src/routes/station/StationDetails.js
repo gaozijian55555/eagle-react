@@ -79,6 +79,9 @@ function PayTypeComponent(props, /*context*/) {
 
 class BottomComponent extends React.Component {
     startNav(){
+
+        //window.webkit.messageHandlers.ShowMessageFromWKWebView.postMessage({body: '传数据'});
+
         alert("导航啦")
     }
     render() {
@@ -135,6 +138,7 @@ class BottomComponent extends React.Component {
                 <div className=" stationDeatils_Attention">
                     注: 导航过程中将使用腾讯地图
                 </div>
+                <div className="stationDeatils_Nav_btn " onClick={this.startNav}>导航</div>
             </div>
         );
     }
@@ -147,7 +151,6 @@ export default class stationDetailsComponent extends React.Component {
             <div className="stationDeatils_List">
                 <TopComponent/>
                 <BottomComponent/>
-                <div className="stationDeatils_Nav_btn " onClick={this.startNav}>导航</div>
             </div>
         );
     }

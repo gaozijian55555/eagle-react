@@ -140,7 +140,8 @@ body{ background: #efefef;}
     width: 100%;
     color: #ffffff;
     font-size: 23px;
-    line-height: 64px;
+    line-height: 50px;
+    height: 50px;
 }
 .stationDeatils_introduce{
     clear: both;
