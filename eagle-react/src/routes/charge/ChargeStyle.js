@@ -67,12 +67,19 @@ class ChargeStyle extends Component {
 
     constructor(props) {
         super(props);
-        this.state = {data: []};
+        // this.state = {data: []};
+        this.state = {
+            datas: [] // 列表数据
+        };
     }
 
     componentWillMount() {
         fetchFindPile('ZC0123456789').then(res => {
-            this.setState({data: res.item})
+            // this.setState(data: res.items)
+            // {data: res.item}
+            this.setState({
+                datas: res.items
+            })
         });
     }
 
@@ -80,7 +87,7 @@ class ChargeStyle extends Component {
         return (
             <div>
                 {
-                    this.state.data.map((item) => {
+                    this.state.datas.map((item) => {
                         return (
                             <Link>
                                 <MChargeStyle data={item} title="立即充电" titleRight="关闭" callNumber="400-030-7759"/>
