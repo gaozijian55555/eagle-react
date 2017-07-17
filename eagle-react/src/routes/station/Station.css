@@ -76,13 +76,26 @@ body{ background: #efefef;}
 }
 
 .stationDeatils_Price{
-    margin-left: 16px;
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 76px;
+}
+
+.stationDeatils_ChargeName{
+    position: absolute;
+    margin-top: 5px;
+}
+
+.stationDeatils_PakingName{
+    margin-top: 10px;
+    margin-left: 43px;
 }
 
 .stationDeatils_PakingPrice{
     padding-top: 10px;
     position: relative;
     margin-left:125px;
+    padding-bottom: 10px;
 }
 
 .stationDeatils_Attention{
@@ -102,9 +115,19 @@ body{ background: #efefef;}
     border-top: 1px solid #dfdfdf;
 }
 
+.stationDeatils_Port{
+    display: inline-block;
+}
+
 .stationDeatils_FreePort{
     font-size: 20px;
-    color: #dfdfdf;
+    color: gray;
+}
+
+.stationDeatils_PayDiv{
+    position: absolute;
+    margin-left: 44px;
+    margin-top: -42px;
 }
 
 .stationDeatils_TotalPort{
@@ -125,8 +148,8 @@ body{ background: #efefef;}
 }
 
 .stationDeatils_evaluate{
-    padding-top: 10px;
-    padding-bottom: 15px;
+    padding-top: 5px;
+    padding-bottom:5px;
     border-top: 0.1px solid #dfdfdf;
     padding-right: 10px;
 }
@@ -209,6 +232,32 @@ body{ background: #efefef;}
     padding-top: 10px;
 }
 
+.stationDeatils_ContentDiv{
+    position: absolute;
+    margin-top: -30px;
+    margin-left: 44px;
+    text-align: center;
+}
+
+.stationDeatils_Star{
+    width: 20px;
+    height: 20px;
+    padding-bottom: -2px;
+}
+
+.stationDeatils_PortNumberDiv{
+    position: absolute;
+    margin-left: 44px;
+    margin-top: -42px;
+}
+
+.stationDeatils_commentIcon{
+    width: 30px;;
+    height: 30px;
+    padding-top:8px;
+    padding-left: 13px;
+}
+
 .stationDeatils_PortIcon{
     width: 40px;;
     height: 15px;
@@ -224,11 +273,11 @@ body{ background: #efefef;}
     margin-top: -36px;
     position: absolute;
     margin-left: 120px;
-    /*background-color: greenyellow;*/
 }
+
 .stationDeatils_PayType{
-    color: #dfdfdf;
-    font-size: 15px;
+    margin-left: 20px;
+    height: 20px;
 }
 
 .stationDeatils_PortNumber{

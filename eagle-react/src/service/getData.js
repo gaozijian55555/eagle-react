@@ -15,9 +15,15 @@ let fetchStationList = (offset, order_type = '') => fetch('GET', 'parking_areas/
 
 export {
     fetchStationList,
+    fetchFindPile,
 }
 
 /* 立即充电 */
 let fetchStartCharge = (sid, pid) => fetch('POST', '/charge/start.json', {
 
+});
+
+/* 输入桩号，查找桩详情 */
+let fetchFindPile = (third_party_pile_id = '') => fetch('POST', '/charging_piles/check_third_party_pile_id.json?auth_token=BM3MEnVC8fJnZhsw4xSF', {
+    third_party_pile_id
 });

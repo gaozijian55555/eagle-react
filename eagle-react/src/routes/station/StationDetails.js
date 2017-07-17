@@ -7,7 +7,11 @@ import address_png from  '../../images/site_icon.png'
 import pile_png    from  '../../images/Community_Serve_List.png'
 import right_png   from  '../../images/Right_arrow_btn.png'
 import phoneIcon   from  '../../images/Call_Btn@2x.png'
-
+import commentIcon from  '../../images/comment_icon.png'
+import  pileIcon   from  '../../images/pile_icon.png'
+import  payIcon    from  '../../images/pay_way_icon.png'
+import  aliPayIcon from  '../../images/zhifubao_icon.png'
+import  timeIcon  from  '../../images/time_icon.png'
 class TopComponent extends React.Component {
     callPhone() {
         alert("hahaha")
@@ -43,14 +47,16 @@ class TopComponent extends React.Component {
                 </div>
 
                 <div className="stationDeatils_evaluate">
-                    <img src={pile_png} className="stationDeatils_BottomPileIcon" alt=""/>
-                    <span> 评价  </span>
-                    <img src={start_png} className="content-star" alt=""/>
-                    <img src={start_png} className="content-star" alt=""/>
-                    <img src={start_png} className="content-star" alt=""/>
-                    <img src={start_png} className="content-star" alt=""/>
-                    <img src={start_png} className="content-star" alt=""/>
-                    <span> (5) </span>
+                    <img src={commentIcon} className="stationDeatils_commentIcon" alt=""/>
+                    <div className="stationDeatils_ContentDiv">
+                        <span> 评价  </span>
+                        <img src={start_png} className="stationDeatils_Star" alt=""/>
+                        <img src={start_png} className="stationDeatils_Star" alt=""/>
+                        <img src={start_png} className="stationDeatils_Star" alt=""/>
+                        <img src={start_png} className="stationDeatils_Star" alt=""/>
+                        <img src={start_png} className="stationDeatils_Star" alt=""/>
+                        <span > (5) </span>
+                    </div>
                     <img src={right_png} className="stationDeatils_Arrows fr" alt=""/>
                 </div>
             </div>
@@ -59,7 +65,7 @@ class TopComponent extends React.Component {
 }
 
 function PortNumberComponent(props, /*context*/) {
-    return <div className={props.portNumberClassName}>
+    return <div className="stationDeatils_Port">
         <div >
             <img src={pile_png} className="stationDeatils_PortIcon" alt=""/>
             <span className="stationDeatils_FreePort">{props.freePort}</span>
@@ -89,24 +95,28 @@ class BottomComponent extends React.Component {
             <div className="stationDeatils_Bottom">
 
                 <div className="stationDeatils_BottomList">
-                    <img src={pile_png} className="stationDeatils_BottomPileIcon" alt=""/>
-                    <span >充电桩数:</span>
-                    <PortNumberComponent freePort="30" totalPort="/100"
-                                         portNumberClassName="stationDeatils_PortNumber stationDeatils_DCPortNumber"/>
-                    <PortNumberComponent freePort="10" totalPort="/30"
-                                         portNumberClassName="stationDeatils_PortNumber stationDeatils_ACPortNumber"/>
+                    <img src={pileIcon} className="stationDeatils_commentIcon" alt=""/>
+                    <div className="stationDeatils_PortNumberDiv">
+                        <span >充电桩数:</span>
+                        <PortNumberComponent freePort="30" totalPort="/100"
+                                             portNumberClassName="stationDeatils_PortNumber stationDeatils_DCPortNumber"/>
+                        <PortNumberComponent freePort="10" totalPort="/30"
+                                             portNumberClassName="stationDeatils_PortNumber stationDeatils_ACPortNumber"/>
+                    </div>
                 </div>
 
                 <div className="stationDeatils_BottomList">
-                    <img src={pile_png} className="stationDeatils_BottomPileIcon" alt=""/>
-                    <span >支付方式:</span>
-                    <PayTypeComponent payType="微信"/>
+                    <img src={payIcon} className="stationDeatils_commentIcon" alt=""/>
+                   <div className="stationDeatils_PayDiv">
+                       <span >支付方式:</span>
+                       <img src={aliPayIcon} className="stationDeatils_PayType" alt=""/>
+                   </div>
                 </div>
 
                 <div className="stationDeatils_BottomList clearBoth">
                     <div className="floatLeft">
-                        <img src={pile_png} className="stationDeatils_BottomPileIcon" alt=""/>
-                        <span >开放时间:</span>
+                        <img src={timeIcon} className="stationDeatils_commentIcon" alt=""/>
+                        <span className="stationDeatils_ChargeName">开放时间:</span>
                     </div>
 
                     <div className="stationDeatils_OpenTime">
@@ -117,15 +127,15 @@ class BottomComponent extends React.Component {
                 </div>
 
                 <div className="clearBoth stationDeatils_BottomList">
-                    <img src={pile_png} className="stationDeatils_BottomPileIcon" alt=""/>
-                    <span >充电费用:</span>
+                    <img src={payIcon} className="stationDeatils_commentIcon" alt=""/>
+                    <span className="stationDeatils_ChargeName">充电费用:</span>
                     <span className="stationDeatils_Price">00:00-24:00 2.0元/度</span>
                 </div>
 
                 <div className="stationDeatils_BottomPaking clearBoth">
-                    <div className="floatLeft">
-                        <img src={pile_png} className="stationDeatils_BottomPileIcon" alt=""/>
-                        <span >停车费用:</span>
+                    <div className="floatLeft stationDeatils_PakingName">
+                        {/*<img src={pile_png} className="stationDeatils_BottomPileIcon" alt=""/>*/}
+                        停车费用:
                     </div>
 
                     <div className="stationDeatils_PakingPrice">
