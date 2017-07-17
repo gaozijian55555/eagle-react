@@ -1,6 +1,4 @@
-/**
- * Created by chenjinxin on 2017/3/25.
- */
+
 import fetch from './../config/fetch';
 
 /* 获取商铺评价列表 */

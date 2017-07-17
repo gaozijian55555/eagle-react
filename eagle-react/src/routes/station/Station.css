@@ -20,6 +20,8 @@ a:active{
     text-decoration: none;
 }
 
+body{ background: #efefef;}
+
 /******** 公共 *********/
 .dis_lib { display: inline-block; }
 .aaa{ display: block; }
@@ -27,33 +29,220 @@ a:active{
 .fl { float: left; }
 .fr { float: right; }
 .mt10 { margin-top: 30px; }
-.padding { padding: 10px 30px 5px 30px; }
+.padding { padding: 10px 20px 5px 20px; }
+.fs20 { font-size: 20px; line-height: 20px; }
 .fs18 { font-size: 18px; line-height: 18px; }
 .fs16 { font-size: 16px; line-height: 16px; }
 .fs15 { font-size: 15px; line-height: 15px; }
 .color_72 { color: #727272;}
 .color_red { color: red; }
-.color_blue { color: #2b81af }
+.color_blue { color: #29a0f6 } /*#3b71af*/
 .h20 { height: 20px; }
 .border_t { border-top-style:solid; border-width: .6px; border-color: #cfcfcf; }
 
 
 /******* 站点列表 ********/
-.list_bg { height: 50rem; background-color: #efefef; padding: 10px 20px 10px 20px; }
-.list-content { border: 1px solid #cfcfcf; border-radius: 10px; background-color: #ffffff; height: 155px; padding-top: 10px; margin: 10px 0 10px 0;}
+.list_bg { background-color: #f5f5f9; padding: 0px 10px 10px 10px; }
+.list-content { border: .6px solid #cfcfcf; border-radius: 10px; background-color: #ffffff; height: 155px; padding-top: 10px; margin: 10px 0 10px 0;}
 .content-star { width: 20px; height: 20px; }
 .content-oil { width: 34px; height: 16px; right: 20px; }
 .content-right { width: 10px; height: 16px; }
 .content-location { width: 14px; height: 16px; }
+.bg-bottom {height: 40px; background-color: #f5f5f9; }
 
 /********* 队长大巴 ********/
 .list_bus_content { border: 1px solid #cfcfcf; height: 100px; background-color: white; margin: 10px 0 10px 0;}
-.bus_top { height: 18px; background-color: #efefef; padding: 10px 30px 10px 30px; border-bottom: 1px solid #cfcfcf; }
+.bus_top { height: 18px; background-color: #f5f5f9; padding: 10px 30px 10px 30px; border-bottom: 1px solid #cfcfcf; }
 .bus_work { width: 50px; height: 16px; border: 1px solid #e78d00; background-color: #f5eac6;
     border-radius: 2px; font-size: 8px; line-height: 16px; color: #e78d00; text-align: center; }
 .bus_station_start {  }
 
 
+/********* 站点详情样式 ********/
+.stationDeatils_TopList{
+    background-color: white;
+    border-bottom: 0.1px solid #dfdfdf;
+}
+
+.stationDeatils_Bottom{
+    margin-top: 15px;
+    background-color: white;
+    border-top: 0.1px solid #dfdfdf;
+}
+
+.stationDeatils_OpenTime{
+    position: relative;
+    margin-left:125px;
+}
+
+.stationDeatils_Price{
+    margin-left: 16px;
+}
+
+.stationDeatils_PakingPrice{
+    padding-top: 10px;
+    position: relative;
+    margin-left:125px;
+}
+
+.stationDeatils_Attention{
+    line-height: 34px;
+    text-align: center;
+    border-top: 1px solid #dfdfdf;
+}
+
+.stationDeatils_BottomPaking{
+    background-color: white;
+    border-top: 1px solid #dfdfdf;
+}
+
+.stationDeatils_BottomList{
+    line-height: 34px;
+    background-color: white;
+    border-top: 1px solid #dfdfdf;
+}
+
+.stationDeatils_FreePort{
+    font-size: 20px;
+    color: #dfdfdf;
+}
+
+.stationDeatils_TotalPort{
+    font-size: 10px;
+}
+
+.stationDeatils_TopAddressIcon {
+    width: 12px;;
+    height: 15px;
+    padding-left: 12px;
+    padding-top: 10px;
+}
+
+.stationDeatils_phoneRightLine{
+    margin-left: 10px;
+    content: "";
+    border-left: 0.1px solid #dfdfdf;
+}
+
+.stationDeatils_evaluate{
+    padding-top: 10px;
+    padding-bottom: 15px;
+    border-top: 0.1px solid #dfdfdf;
+    padding-right: 10px;
+}
+
+.stationDeatils_Nav_btn {
+    text-align: center;
+    background: #009ad5;
+    position: fixed;
+    /*margin-top: -64px;*/
+    bottom: 0px;
+    width: 100%;
+    color: #ffffff;
+    font-size: 23px;
+    line-height: 64px;
+}
+.stationDeatils_introduce{
+    clear: both;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top: 0.1px solid #dfdfdf;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.stationDeatils_address {
+    position:absolute;
+    padding-top: 8px;
+    padding-left: 12px;
+}
+
+.stationDeatils_phoneIcon{
+    width: 18px;;
+    height: 18px;
+}
+
+.stationDeatils_phoneNumber{
+    padding-left: 35px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #dfdfdf;
+}
+
+.stationDeatils_distance{
+    text-align: center;
+    display: block;
+    padding-top: 5px;
+    margin: 0 auto;
+}
+
+.stationDeatils_Top{
+    position:relative;
+}
+
+.stationDeatils_distanceLeftDiv{
+    float: left;
+    width: 70%;
+}
+
+.stationDeatils_distanceRightDiv{
+    width: 20%;
+}
+
+.stationDeatils_distanceDiv{
+    padding-top: 8px;
+    float: right;
+    margin-right: 20px;
+}
+
+.stationDeatils_distanceIcon{
+    display: block;
+    margin: 0 auto;
+    width: 28px;;
+    height: 35px;
+}
+
+.stationDeatils_BottomPileIcon {
+    width: 40px;;
+    height: 15px;
+    padding-top: 10px;
+}
+
+.stationDeatils_PortIcon{
+    width: 40px;;
+    height: 15px;
+    padding-top: 10px;
+}
+.stationDeatils_Arrows{
+    padding-top: 10px;
+    width: 10px;
+    height: 16px;
+}
+
+.stationDeatils_Pay{
+    margin-top: -36px;
+    position: absolute;
+    margin-left: 120px;
+    /*background-color: greenyellow;*/
+}
+.stationDeatils_PayType{
+    color: #dfdfdf;
+    font-size: 15px;
+}
+
+.stationDeatils_PortNumber{
+    margin-top: -36px;
+    position: absolute;
+    /*background-color: #00aaee;*/
+}
+
+.stationDeatils_DCPortNumber{
+    margin-left: 120px;
+}
+
+.stationDeatils_ACPortNumber{
+    margin-left: 220px;
+}
 
 @keyframes App-logo-spin {
     from {

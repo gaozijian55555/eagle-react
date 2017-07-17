@@ -10,27 +10,21 @@ import 'antd-mobile/lib/button/style'
 
 import TabBar from 'antd-mobile/lib/tab-bar'
 import {Menu} from './Menu'
-import 'antd-mobile/lib/tab-bar/style'
 import 'antd-mobile/dist/antd-mobile.css'
 
 import NavBar from 'antd-mobile/lib/nav-bar'
 import Icon from 'antd-mobile/lib/icon'
 import 'antd-mobile/lib/icon/style'
 
-
 export default React.createClass({
 
-
-    getInitialState()
-    {
+    getInitialState() {
         return {
             selectedTab: '/station_list',
         };
-    }
-    ,
+    },
 
-    renderContent()
-    {
+    renderContent() {
 
         if (this.state.selectedTab === '/station_list')
             return <StationList/>;
@@ -38,9 +32,7 @@ export default React.createClass({
             return <Charge/>;
         if (this.state.selectedTab === '/bus_list')
             return <BusList/>
-    }
-    ,
-
+    },
 
     renderMenu()
     {
@@ -60,25 +52,18 @@ export default React.createClass({
                         this.setState({
                             selectedTab: m.url,
                         });
-
-                    }}
-                >
+          }}>
                     {this.renderContent()}
-                }
-
-
                 </TabBar.Item>
             );
         }
         return menus;
-    }
-    ,
+    },
 
     render()
     {
         let menus = this.renderMenu();
         return (
-
 
             <TabBar
                 unselectedTintColor="#949494"
@@ -87,8 +72,7 @@ export default React.createClass({
             >
                 {menus}
             </TabBar>
-        )
-            ;
+        );
 
     },
 });

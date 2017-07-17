@@ -17,7 +17,7 @@ function TopComponent(props, /*context*/) {
         </div>
 
         <div className="detailsTopBusInfo">
-            <p>线路名称: 云部落大巴1号线 (云部落TMT园区西南门 - 金榜世家6期(西北门)</p>
+            <p></p>
             <p>车次编号: 1001</p>
             <p>发车时间: 17:45 (工作日)</p>
             <p>票价: 0.1元/次</p>
@@ -55,6 +55,15 @@ function MiddleComponent(props, /*context*/) {
                 address="位置: 上海市闵行区颛兴东路1313/1331/1277云部落产业园铭牌处" classNames="detailsMiddle_Origin "
                 borderStyle="detailsMiddle_LeftBorder detailsMiddleLeft"/>
         <Middle startName="云部落TMT园区西北门" startTime="17:45发车"
+                address="位置: 上海市闵行区颛兴东路1313/1331/1277云部落产业园铭牌处" classNames="detailsMiddle_Origin "
+                borderStyle="detailsMiddle_LeftBorder detailsMiddleLeft"/>
+        <Middle startName="云部落TMT园区西北门" startTime="17:45发车"
+                address="位置: 上海市闵行区颛兴东路1313/1331/1277云部落产业园铭牌处" classNames="detailsMiddle_Origin "
+                borderStyle="detailsMiddle_LeftBorder detailsMiddleLeft"/>
+        <Middle startName="云部落TMT园区西北门" startTime="17:45发车"
+                address="位置: 上海市闵行区颛兴东路1313/1331/1277云部落产业园铭牌处" classNames="detailsMiddle_Origin "
+                borderStyle="detailsMiddle_LeftBorder detailsMiddleLeft"/>
+        <Middle startName="云部落TMT园区西北门" startTime="17:45发车"
                 address="位置: 上海市闵行区颛兴东路1313/1331/1277云部落产业园铭牌处" classNames="detailsMiddle_end "
                 borderStyle="border_none detailsMiddleLeft"/>
     </div>
@@ -76,7 +85,7 @@ function BottomComponent(props, /*context*/) {
 export default class BusDetails extends Component {
     render() {
         return (
-            <div className="list_bg">
+            <div className="details_List_bg">
                 <TopComponent/>
                 <MiddleComponent/>
                 <BottomComponent/>
