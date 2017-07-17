@@ -14,7 +14,7 @@ import  aliPayIcon from  '../../images/zhifubao_icon.png'
 import  timeIcon  from  '../../images/time_icon.png'
 class TopComponent extends React.Component {
     callPhone() {
-        alert("hahaha")
+        alert("拨打客服电话:***-****-****")
     }
 
     render() {
@@ -88,7 +88,7 @@ class BottomComponent extends React.Component {
 
         //window.webkit.messageHandlers.ShowMessageFromWKWebView.postMessage({body: '传数据'});
 
-        alert("导航啦")
+        alert("实现导航功能")
     }
     render() {
         return (

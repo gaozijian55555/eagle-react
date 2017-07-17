@@ -19,7 +19,7 @@ const Menu =[
     },
 
     {
-        title:"我的",
+        title:"队长巴士",
         url: "/bus_list",
         icon:"EljxLrJEShWZObW",
         selected:"LWNaMdwAFSmYBFw",
