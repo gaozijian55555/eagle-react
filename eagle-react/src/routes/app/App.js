@@ -19,7 +19,6 @@ import 'antd-mobile/lib/icon/style'
 export default React.createClass({
 
     getInitialState() {
-
         return {
             selectedTab: '/station_list',
         };

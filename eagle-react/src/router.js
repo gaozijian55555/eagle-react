@@ -3,7 +3,7 @@
 // */
 import React, { Component } from 'react'
 import ReactDOM, { render } from 'react-dom'
-import {Router, Route, hashHistory} from 'react-router'
+import {Router, Route, hashHistory, browserHistory} from 'react-router'
 
 import App from './routes/app/App'
 import About from './routes/about/About'
@@ -15,7 +15,7 @@ import StationDetails from './routes/station/StationDetails'
 class RouterRoot extends Component {
     render() {
         return (
-            <Router history={hashHistory}>
+            <Router history={browserHistory}>
                 <Route path="/" component={App}/>
                 <Route path="/about" component={About}/>
                 <Route path="/station_list" component={StationList}/>
