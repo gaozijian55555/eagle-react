@@ -1,0 +1,165 @@
+body, div, dl, dt, dd, ol, ul, li,h1, h2, h3, h4, h5, h6,pre,form,img, p,tr, th, td {
+    margin: 0;
+    padding: 0;
+}
+
+
+a{color:#333;text-decoration:none;}
+a:hover{text-decoration:none;}
+a:link{
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+a:active{
+    text-decoration: none;
+}
+
+body{ background: #efefef;}
+
+
+/***公共样式***/
+.listBgStyle{
+    background-color: #dfdfdf;
+}
+
+.listComponent{
+    background-color: #00aaee;
+    margin-bottom: 15px;
+}
+
+.testStation_ChargingPileStateText{
+    vertical-align: text-bottom;
+    font-size: 22px;
+    line-height:35px;
+    margin-right: 0px;
+}
+
+.chargingPileStateText{
+    color: green;
+}
+
+
+.offLinePileStateText{
+    color: black;
+}
+
+.chargingFailPileStateText{
+    color: red;
+}
+
+
+
+.testStation_ChargingPileIcon{
+    padding-top: 5px;
+    width: 30px;
+    height: 30px;
+    padding-right: 10px;
+}
+
+.testStation_TopStateButton{
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    height: 70px;
+    margin-top: 5px;
+}
+
+.testStation_TopStateButtonContent{
+    display: block;
+}
+
+.testStation_TopStateButtonSuper{
+    font-size:0;
+    display:inline;
+}
+
+.testStation_TopStateInactiveButton{
+    width: 33%;
+    background-color: gray;
+}
+
+.testStation_TopStateFreeButton{
+    margin: 0 0.5%;
+    width: 33%;
+    background-color: green;
+}
+
+.testStation_TopStateFaultButton{
+    margin-right: 0.5%;
+    width: 49.5%;
+    background-color: red;
+}
+
+.testStation_TopStateOffLineButton{
+    margin-left: 0.5%;
+    color: black;
+    background-color: yellow;
+    width: 49.5%;
+}
+
+.testStation_TopStateBg{
+    height: 150px;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.testStation_TopStyle {
+    height: 35px;
+    border-bottom: 1px solid #cfcfcf;
+    background-color: white;
+}
+
+.testStation_CenterStyle{
+        position: relative;
+
+    border-bottom: 1px solid #cfcfcf;
+}
+
+.testStation_CenterOriginStyle{
+    background-color: white;
+    height: 35px;
+}
+
+.testStation_BottomStyle{
+    background-color: white;
+    height: 64px;
+}
+
+.testStation_BottomBtnStyle{
+    padding: 5px 25px 5px 25px; /*top right  bottom  left*/
+    margin-right: 20px;
+    margin-top: 15px;
+    background-color: white;
+    border: 1.1px solid blue;
+    color: blue;
+    font-size: 17px;
+}
+
+.testStation_TopLeftMargin{
+    padding-top: 8px;
+    padding-left: 20px;
+}
+
+.testStation_TopRightMargin{
+    padding-top: 8px;
+    margin-right: 20px;
+}
+
+.testStation_centerRightMargin{
+    height: 35px;
+    position: absolute;
+    text-align: center;
+    line-height: 35px;
+    right: 30px;
+    top: 0px;
+}

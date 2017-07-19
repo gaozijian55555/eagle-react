@@ -13,9 +13,23 @@ let fetchStationList = (offset, order_type = '') => fetch('GET', 'parking_areas/
   limit: 10
 });
 
+let fetchStationChargingPileList = (offset, id = '') => fetch('GET', 'assistant/charging_piles/charging_piles_list.json', {
+  id,
+  offset: 1,
+  limit: 10,
+  auth_token: 'hVWKbBs7tbteqkcayUkz'
+});
+
+let fetchStationChargingPileState = (id = '') => fetch('GET', 'assistant/charging_piles/charging_piles_count.json', {
+  id,
+  auth_token: 'hVWKbBs7tbteqkcayUkz'
+});
+
 export {
     fetchStationList,
     fetchFindPile,
+    fetchStationChargingPileList,
+    fetchStationChargingPileState,
 }
 
 /* 立即充电 */
