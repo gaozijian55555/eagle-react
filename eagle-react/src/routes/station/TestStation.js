@@ -5,8 +5,6 @@ import React, {Component} from 'react';
 import './testStation.css';
 import right_png from '../../images/right_btn@2x.png'
 import chargingPileIcon from '../../images/charging_pile_icon_black@2x.png'
-import 'rodal/lib/rodal.css'
-import Rodal from 'rodal';
 import ConfirmWins from './PopupComponents'
 import {Link} from 'react-router'
 import { fetchStationChargingPileList } from '../../service/getData'

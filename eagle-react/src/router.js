@@ -16,7 +16,6 @@ import OpsWarningHost from './routes/warning/OpsWarningHost'
 import OpsStationList from './routes/station/OpsStationList'
 import TestStation  from  './routes/station/TestStation'
 
-
 class RouterRoot extends Component {
     render() {
         return (
@@ -31,8 +30,8 @@ class RouterRoot extends Component {
 
                 <Route path="/ops_station_list" component={OpsStationList}/>
                 <Route path="/ops_warning_list" component={OpsWarningHost}/>
+                <Route path="/ops_charge_pile_list" component={TestStation}/>
 
-                <Route path="/station_deatils" component={TestStation}/>
             </Router>
         )
     }
