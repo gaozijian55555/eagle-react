@@ -33,11 +33,11 @@ export default  class ConfirmWins extends React.Component {
                     <input className="inputStyle" type="text" value={text} onChange={this.handleChange}/>
                     <div className="fn-btn text-center">
                         {
-                            props.leftBtn ? <span className="btn left-btn" onClick={props.onLeftClick}>
+                            props.leftBtn ? <span className="pop-btn left-btn" onClick={props.onLeftClick}>
                             {props.leftBtn.text}
                             </span> : ''
                         }
-                        <span className="btn right-btn" onClick={props.onRightClick}>
+                        <span className="pop-btn right-btn" onClick={props.onRightClick}>
                             {props.rightBtn.text}
                             </span>
                     </div>
