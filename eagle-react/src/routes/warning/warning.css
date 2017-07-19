@@ -1,0 +1,22 @@
+body, div, dl, dt, dd, ol, ul, li,h1, h2, h3, h4, h5, h6,pre,form,img, p,tr, th, td {
+    margin: 0;
+    padding: 0;
+}
+
+body{ background: #efefef;}
+
+/******** 公共 *********/
+.bg_color { color: #f5f5f9; }
+.cf { clear: both; }
+.fl { float: left; }
+.fr { float: right; }
+.padding_10 { padding: 10px 10px 10px 10px; }
+
+
+.btn_left { margin:5px 0px 10px 30px;  width: 40%; height: 40px; font-size: 16px; line-height: 40px; }
+.btn_right { margin: 5px 30px 10px 0px; width: 40%; height: 40px; font-size: 16px; line-height: 40px; }
+
+.content_bg { margin: 0 0 10px 0; padding: 10px 20px 10px 20px; background-color: white; height: 125px; }
+.content_text { margin: 10px 0 10px 0; font-size: 14px; line-height: 14px; }
+.content_level { font-size: 20px; line-height: 20px; color: red; }
+.content_copy { margin-left: 20px; font-size: 14px; line-height: 14px; color: #888; }

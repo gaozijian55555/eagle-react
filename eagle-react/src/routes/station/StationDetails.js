@@ -11,11 +11,14 @@ import commentIcon from  '../../images/comment_icon.png'
 import  pileIcon   from  '../../images/pile_icon.png'
 import  payIcon    from  '../../images/pay_way_icon.png'
 import  aliPayIcon from  '../../images/zhifubao_icon.png'
+import  timeIcon  from  '../../images/time_icon.png'
 import  timeIcon   from  '../../images/time_icon.png'
+
 class TopComponent extends React.Component {
-    callPhone() {
-        alert("拨打客服电话:***-****-****")
-    }
+
+    onPhoneClick (){
+        window.webkit.messageHandlers.AppModel.postMessage({body: '传数据'});
+    };
 
     render() {
         return (
@@ -31,7 +34,7 @@ class TopComponent extends React.Component {
                         20000012
                         <span className="stationDeatils_phoneRightLine">
                     </span>
-                        <button onClick={this.callPhone}>
+                        <button onClick={this.onClickButton}>
                             <img src={phoneIcon} className="stationDeatils_phoneIcon" alt=""/>
                         </button>
                     </div>
@@ -86,10 +89,10 @@ function PayTypeComponent(props, /*context*/) {
 class BottomComponent extends React.Component {
     startNav(){
 
-        //window.webkit.messageHandlers.ShowMessageFromWKWebView.postMessage({body: '传数据'});
+        window.webkit.messageHandlers.ShowNativeNavigationSheet.postMessage({body: '传数据'});
 
-        alert("实现导航功能")
     }
+
     render() {
         return (
             <div className="stationDeatils_Bottom">

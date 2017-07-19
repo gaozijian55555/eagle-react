@@ -12,7 +12,11 @@ import BusList from './routes/bus/BusList'
 import Charge from './routes/charge/ChargeStyle'
 import BusDetails from './routes/bus/BusDetails'
 import StationDetails from './routes/station/StationDetails'
+import OpsWarningHost from './routes/warning/OpsWarningHost'
+import OpsStationList from './routes/station/OpsStationList'
 import TestStation  from  './routes/station/TestStation'
+
+
 class RouterRoot extends Component {
     render() {
         return (
@@ -23,6 +27,11 @@ class RouterRoot extends Component {
                 <Route path="/bus_list" component={BusList}/>
                 <Route path="/charge" component={Charge}/>
                 <Route path="/bus_details" component={BusDetails}/>
+                <Route path="/station_deatils" component={StationDetails}/>
+
+                <Route path="/ops_station_list" component={OpsStationList}/>
+                <Route path="/ops_warning_list" component={OpsWarningHost}/>
+
                 <Route path="/station_deatils" component={TestStation}/>
             </Router>
         )
