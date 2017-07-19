@@ -92,7 +92,6 @@ export default class StationList extends Component {
 
                 <div className="bg-bottom"></div>
             </div>
-
         );
     }
 }

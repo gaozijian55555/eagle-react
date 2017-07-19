@@ -7,7 +7,10 @@ export {
 
     fetchOpsStationList,
     fetchOpsWarningCount,
+    fetchStationChargingPileList,
+    fetchStationChargingPileState,
 }
+
 
 /***************************** 测试相关接口 ********************************/
 /***************************** ********** ********************************/
@@ -48,5 +51,17 @@ let fetchOpsStationList = (offset, kwd = '', district_name = '') => fetch('GET',
 });
 
 let fetchOpsWarningCount = () => fetch('GET', '/assistant/charging_piles/alarm_count.json', {
+  auth_token: 'hVWKbBs7tbteqkcayUkz'
+});
+
+let fetchStationChargingPileList = (offset, id = '') => fetch('GET', 'assistant/charging_piles/charging_piles_list.json', {
+  id,
+  offset: 1,
+  limit: 10,
+  auth_token: 'hVWKbBs7tbteqkcayUkz'
+});
+
+let fetchStationChargingPileState = (id = '') => fetch('GET', 'assistant/charging_piles/charging_piles_count.json', {
+  id,
   auth_token: 'hVWKbBs7tbteqkcayUkz'
 });

@@ -12,6 +12,7 @@ import  pileIcon   from  '../../images/pile_icon.png'
 import  payIcon    from  '../../images/pay_way_icon.png'
 import  aliPayIcon from  '../../images/zhifubao_icon.png'
 import  timeIcon  from  '../../images/time_icon.png'
+import  timeIcon   from  '../../images/time_icon.png'
 
 class TopComponent extends React.Component {
 
