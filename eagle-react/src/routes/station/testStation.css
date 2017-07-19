@@ -24,18 +24,18 @@ body{ background: #efefef;}
 
 
 /***公共样式***/
-.listBgStyle{
+.testStation_ListBgStyle{
     background-color: #dfdfdf;
 }
 
-.listComponent{
+.testStation_ListComponent{
     background-color: #00aaee;
     margin-bottom: 15px;
 }
 
 .testStation_ChargingPileStateText{
     vertical-align: text-bottom;
-    font-size: 22px;
+    font-size: 20px;
     line-height:35px;
     margin-right: 0px;
 }
@@ -52,8 +52,6 @@ body{ background: #efefef;}
 .chargingFailPileStateText{
     color: red;
 }
-
-
 
 .testStation_ChargingPileIcon{
     padding-top: 5px;
@@ -120,8 +118,7 @@ body{ background: #efefef;}
 }
 
 .testStation_CenterStyle{
-        position: relative;
-
+    position: relative;
     border-bottom: 1px solid #cfcfcf;
 }
 
