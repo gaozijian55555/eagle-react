@@ -3,7 +3,7 @@
 */
 .title {
     color: #333333;
-    font-size: 30px;
+    font-size: 18px;
     line-height: 80px;
     /*IE5.5  将对象呈递为内联对象，但是对象的内容作为块对象呈递。旁边的内联对象会被呈递在同一行内 */
     display: inline-block;
@@ -39,7 +39,7 @@
             必须定义 position 属性值为 absolute 或者 relative 此取值方可生效。请参阅 长度单位 。 */
     right: 3%;
     line-height: 80px;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .p1 {
@@ -48,6 +48,10 @@
 
 .hg25 {
     line-height: 40px;
+}
+
+.hg20 {
+    line-height: 20px;
 }
 
 .f_s_14 {
@@ -76,6 +80,10 @@
 
 .mb_08 {
     margin-bottom: 16px;
+}
+
+.mb_2 {
+    margin-bottom: 40px;
 }
 
 .m00_a {
@@ -125,6 +133,10 @@
     line-height: 40px;
 }
 
+.l_h_20 {
+    line-height: 20px;
+}
+
 .m_l_7p {
     margin-left: 10%;
 }
@@ -163,7 +175,7 @@
     width: 1px;
     background: #d8d8d8;
     margin-left: 10px;
-    margin-top: 18px;
+    margin-top: 10px;
     display: inline-block;
     margin-right: 40px;
     float: right;
