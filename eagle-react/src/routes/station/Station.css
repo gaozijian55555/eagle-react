@@ -3,7 +3,6 @@ body, div, dl, dt, dd, ol, ul, li,h1, h2, h3, h4, h5, h6,pre,form,img, p,tr, th,
     padding: 0;
 }
 
-
 a{color:#333;text-decoration:none;}
 a:hover{text-decoration:none;}
 a:link{
@@ -36,6 +35,7 @@ body{ background: #efefef;}
 .fs15 { font-size: 15px; line-height: 15px; }
 .color_72 { color: #727272;}
 .color_red { color: red; }
+.color_green { color: limegreen; }
 .color_blue { color: #29a0f6 } /*#3b71af*/
 .h20 { height: 20px; }
 .border_t { border-top-style:solid; border-width: .6px; border-color: #cfcfcf; }
@@ -56,6 +56,22 @@ body{ background: #efefef;}
 .bus_work { width: 50px; height: 16px; border: 1px solid #e78d00; background-color: #f5eac6;
     border-radius: 2px; font-size: 8px; line-height: 16px; color: #e78d00; text-align: center; }
 .bus_station_start {  }
+
+
+
+/********* 充电助手 ********/
+.btn_left { margin:5px 0px 10px 30px;  width: 40%; height: 40px; font-size: 16px; line-height: 40px; }
+.btn_right { margin: 5px 30px 10px 0px; width: 40%; height: 40px; font-size: 16px; line-height: 40px; }
+
+.content_ops_bg { margin: 0 0 10px 0; padding: 15px 20px 10px 20px; background-color: white; height: 80px; position: relative; }
+.content_ops_build { width: 18px; height: 20px; background-color: lightgray; border-radius: 5px;
+    font-size: 12px; line-height: 20px; padding: 0px 0px 0px 5px; margin-top: -1px; margin-right: 10px; }
+.content_ops_in { position: absolute; right: 0px; top: 0px; width: 45px; height: 40px; }
+.content_ops_title { font-size: 18px; line-height: 18px; color: #333333; }
+.content_ops_state { font-size: 18px; line-height: 18px; color: red; }
+.content_ops_admin { font-size: 16px; line-height: 16px; color: #333333; padding: 10px 0 10px 0; }
+.content_ops_icon { width: 20px; height: 20px; }
+.content_ops_num { font-size: 18px; line-height: 18px; }
 
 
 /********* 站点详情样式 ********/

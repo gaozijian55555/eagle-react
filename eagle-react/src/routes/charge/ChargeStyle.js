@@ -24,6 +24,7 @@ var MChargeStyle = React.createClass({
             var pile_fees = this.props.data.pile_fees;
             var interface_standards = this.props.data.interface_standards;
             return <div>
+
                 <div className="title_cell">
                     <span className="title"> {this.props.title} </span>
                     <span className="btn_close fr" onclick={ window.close() }> {this.props.titleRight} </span>
@@ -55,9 +56,11 @@ var MChargeStyle = React.createClass({
                         - {pile_fees.length ? pile_fees[0].fee_end : ''} {this.props.data.total_price}元/度
                     </div>
                 </div>
-                <div className="background_while hg25 bb_d8 mb_40 f_s_12 m_l_7p">若有疑问，请拨打{this.props.callNumber}
+                <div className="background_while hg25 bb_d8 mb_40 f_s_12 p_l_10">若有疑问，请拨打{this.props.callNumber}
                     <a className="phone_btn fr m_r_15" href={this.props.callNumber}></a><i className="sg"></i>
                 </div>
+                <div className="bg-bottom"></div>
+
                 <div className="charging_start_btn t_a_c mb_2">立即充电</div>
             </div>;
         }
@@ -80,6 +83,7 @@ class ChargeStyle extends Component {
     render() {
         return (
             <div>
+                <div hidden = {this.state.data.length}> 正在加载电桩信息,请稍后... </div>
                 {
                     this.state.data.map((item) => {
                         return (
