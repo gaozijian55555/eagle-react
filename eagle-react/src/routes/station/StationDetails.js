@@ -16,7 +16,7 @@ import  timeIcon  from  '../../images/time_icon.png'
 class TopComponent extends React.Component {
 
     onPhoneClick (){
-        window.webkit.messageHandlers.AppModel.postMessage({body: '传数据'});
+        window.webkit.messageHandlers.ShowNativeNavigationSheet.postMessage({body: '传数据'});
     };
 
     render() {
