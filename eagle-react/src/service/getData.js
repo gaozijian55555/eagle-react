@@ -9,6 +9,7 @@ export {
     fetchOpsWarningCount,
     fetchStationChargingPileList,
     fetchStationChargingPileState,
+    fetchOrderLsit,
 }
 
 
@@ -64,4 +65,12 @@ let fetchStationChargingPileList = (offset, id = '') => fetch('GET', 'assistant/
 let fetchStationChargingPileState = (id = '') => fetch('GET', 'assistant/charging_piles/charging_piles_count.json', {
   id,
   auth_token: 'hVWKbBs7tbteqkcayUkz'
+});
+
+let fetchOrderLsit = (kwd = '', charging_record_state, limit, offset) => fetch('GET', '/assistant/charging_records/record_list.json', {
+    kwd,
+    charging_record_state,
+    limit,
+    offset,
+    auth_token: 'hVWKbBs7tbteqkcayUkz'
 });

@@ -12,3 +12,87 @@ body{ background: #efefef;}
 .fr { float: right; }
 .padding_10 { padding: 10px 10px 10px 10px; }
 
+/******** 条目 *********/
+.order_list {
+    border-radius: 10px;
+    margin: 10px 0 15px;
+    border: .1px solid #dfdfdf;
+    background-color: #ffffff;
+}
+
+.radius_10 {
+    border-radius: 10px;
+}
+
+.radius_t_l_10 {
+    border-top-left-radius: 10px;
+}
+
+.radius_t_r_10 {
+    border-top-right-radius: 10px;
+}
+
+.h20 {
+    height: 20px;
+}
+
+.h30 {
+    height: 30px;
+}
+
+.f_s_13 {
+    font-size: 13px;
+}
+
+.t_a_c {
+    text-align: center;
+}
+
+.f_s_15 {
+    font-size: 15px;
+}
+
+.f_s_18 {
+    font-size: 18px;
+}
+
+.m_t_10 {
+    margin-top: 10px;
+}
+
+.charge_state_icon {
+    margin-right: 40px;
+
+}
+
+.btn_charge_stop {
+    background: #df822e;
+    height: 30px;
+    position: fixed;
+    bottom: 0px;
+    width: 40px;
+    color: #ffffff;
+    font-size: 16px;
+    border: .1px solid #718fa3;
+    border-radius: 3px;
+}
+
+.border_top {
+    border-top-style: solid;
+    border-color: #dfdfdf;
+    border-width: .3px;
+}
+
+.btn_copy {
+    background: #a39b82;
+    height: 25px;
+    align-content: center;
+    position: fixed;
+    bottom: 0px;
+    width: 40px;
+    color: #000;
+    font-size: 16px;
+    border: .1px solid #718fa3;
+    border-radius: 3px;
+}
+
