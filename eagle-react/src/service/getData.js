@@ -10,7 +10,8 @@ export {
     fetchStationChargingPileList,
     fetchStationChargingPileState,
     fetchOpsWarningOrderList,
-    fetchOpsWarningPileList
+    fetchOpsWarningPileList,
+    fetchOrderLsit,
 }
 
 
@@ -68,12 +69,21 @@ let fetchStationChargingPileState = (id = '') => fetch('GET', 'assistant/chargin
   auth_token: 'hVWKbBs7tbteqkcayUkz'
 });
 
+
 let fetchOpsWarningOrderList = (kwd = '') => fetch('GET', 'assistant/charging_piles/charging_record_alarm.json', {
   kwd,
   auth_token: 'hVWKbBs7tbteqkcayUkz'
 });
 
 let fetchOpsWarningPileList = (kwd = '') => fetch('GET', '/assistant/charging_piles/charging_pile_alarm.json', {
-  kwd,
-  auth_token: 'hVWKbBs7tbteqkcayUkz'
+    kwd,
+    auth_token: 'hVWKbBs7tbteqkcayUkz'
+});
+
+let fetchOrderLsit = (kwd = '', charging_record_state, limit, offset) => fetch('GET', '/assistant/charging_records/record_list.json', {
+    kwd,
+    charging_record_state,
+    limit,
+    offset,
+    auth_token: 'hVWKbBs7tbteqkcayUkz'
 });
