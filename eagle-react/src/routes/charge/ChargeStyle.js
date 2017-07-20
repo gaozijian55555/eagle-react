@@ -27,7 +27,7 @@ var MChargeStyle = React.createClass({
 
                 <div className="title_cell">
                     <span className="title"> {this.props.title} </span>
-                    <span className="btn_close fr" onclick={ window.close() }> {this.props.titleRight} </span>
+                    <span className="btn_close fr"><Link to="/ops_order_list" > {this.props.titleRight}</Link> </span>
                 </div>
 
                 <div className="background_while hg25 f_s_14 bb_d8 p20">
