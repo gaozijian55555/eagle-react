@@ -1,0 +1,51 @@
+body, div, dl, dt, dd, ol, ul, li,h1, h2, h3, h4, h5, h6,pre,form,img, p,tr, th, td {
+    margin: 0;
+    padding: 0;
+}
+
+
+a{color:#333;text-decoration:none;}
+a:hover{text-decoration:none;}
+a:link{
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+a:active{
+    text-decoration: none;
+}
+
+body{ background: #efefef;}
+
+
+
+.opsPersonalLogoBgDiv{
+    text-align: center;
+}
+
+.opsPersonalLogoBg{
+    padding-top: 40px;
+    margin: 0 auto;
+    width: 114px;
+    height: 140px;
+}
+
+.opsPersonalUserName{
+    padding-top: 80px;
+    margin: 0 auto;
+    width: 50%;
+    color: black;
+    font-size: 16px;
+    line-height: 35px;
+}
+
+.opsPersonalLoginOut{
+    width: 200px;
+    margin: auto;
+    margin-top: 50px;
+}

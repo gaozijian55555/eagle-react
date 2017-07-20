@@ -2,7 +2,7 @@
  * Created by WXW on 2017/7/17.
  */
 import React, {Component} from 'react';
-import './testStation.css';
+import './OpsChargePile.css';
 import right_png from '../../images/right_btn@2x.png'
 import chargingPileIcon from '../../images/charging_pile_icon_black@2x.png'
 import ConfirmWins from './PopupComponents'
@@ -158,21 +158,19 @@ class CenterComponent extends Component {
 }
 
 
-class BottomComponent extends Component {
+class BottomComponent extends React.Component {
     propTypes = {
         data: React.PropTypes.object.isRequired,
     };
 
-    clickChargingPrileDetails() {
-        alert('wdwd');
-        window.webkit.messageHandlers.clickPrileDetails.postMessage({ station_id: this.props.data.id});
-    }
+    clickChargingPrileDetails (){
+        window.webkit.messageHandlers.PushOrderDetailsVc.postMessage({pile_id:this.props.data.id});
+    };
 
     render() {
         return (
             <div className="testStation_BottomStyle">
-                <button onClick={this.clickChargingPrileDetails} className="testStation_BottomBtnStyle floatRight">详情</button>
-
+                <button onClick={this.clickChargingPrileDetails.bind(this)} value={this.props.data.id} className="testStation_BottomBtnStyle floatRight">订单详情{this.props.data.id}</button>
             </div>
         )
     }

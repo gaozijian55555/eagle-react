@@ -14,8 +14,8 @@ import  aliPayIcon from  '../../images/zhifubao_icon.png'
 import  timeIcon  from  '../../images/time_icon.png'
 
 class TopComponent extends React.Component {
-
     onPhoneClick (){
+        alert("导航啦");
         window.webkit.messageHandlers.ShowNativeNavigationSheet.postMessage({body: '传数据'});
     };
 
@@ -33,7 +33,7 @@ class TopComponent extends React.Component {
                         20000012
                         <span className="stationDeatils_phoneRightLine">
                     </span>
-                        <button onClick={this.onClickButton}>
+                        <button onClick={this.onPhoneClick}>
                             <img src={phoneIcon} className="stationDeatils_phoneIcon" alt=""/>
                         </button>
                     </div>

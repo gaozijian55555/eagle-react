@@ -10,6 +10,7 @@ export {
     fetchStationChargingPileList,
     fetchStationChargingPileState,
     fetchOrderLsit,
+    fetchOpsLoginOut,
 }
 
 
@@ -41,6 +42,11 @@ let fetchFindPile = (third_party_pile_id = '') => fetch('POST', 'api/charging_pi
 
 /***************************** 充电助手相关接口 ********************************/
 /***************************** ************* ********************************/
+
+/*退出登录*/
+let fetchOpsLoginOut = () => fetch('DELETE', 'api/users/sign_out.json', {
+  auth_token: 'hVWKbBs7tbteqkcayUkz'
+});
 
 /* 站点列表 */
 let fetchOpsStationList = (offset, kwd = '', district_name = '') => fetch('GET', 'assistant/parking_areas/parking_area_list.json', {
