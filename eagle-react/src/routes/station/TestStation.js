@@ -114,7 +114,7 @@ class CenterOriginComponent extends Component {
         };
 
         return<div className="testStation_CenterOriginStyle">
-                 {/*<button className="buttonDiv" onClick={this.show.bind(this)}></button>*/}
+                 {/*<button className="testStation_buttonDiv" onClick={this.show.bind(this)}></button>*/}
             {/*{this.state.visible ? <ConfirmWins {...ConfirmInfo} onLeftClick={this.hide.bind(this)}*/}
                                                {/*onRightClick={this.hide.bind(this)}/> : ""}*/}
             <div className="testStation_TopLeftMargin">
@@ -165,7 +165,7 @@ class BottomComponent extends Component {
 
     clickChargingPrileDetails() {
         alert('wdwd');
-        window.webkit.messageHandlers.ClickChargingPrileDetails.postMessage({station_id: this.props.data.id});
+        window.webkit.messageHandlers.clickPrileDetails.postMessage({ station_id: this.props.data.id});
     }
 
     render() {
@@ -215,6 +215,7 @@ export default class TestStation extends Component {
             })
         })
     }
+
     render() {
 
         return (<div className="testStation_ListBgStyle">
