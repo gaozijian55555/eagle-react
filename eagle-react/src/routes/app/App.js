@@ -2,9 +2,6 @@
 //commit
 import React from 'react'
 import { Link } from 'react-router'
-import StationList from '../station/StationList'
-import Charge from '../charge/ChargeStyle'
-import BusList from '../bus/BusList'
 import Button from 'antd-mobile/lib/button'
 import 'antd-mobile/lib/button/style'
 
@@ -27,11 +24,11 @@ export default React.createClass({
     renderContent() {
 
         if (this.state.selectedTab === '/station_list')
-            return <StationList/>;
+            return <div> 1 </div>;
         if (this.state.selectedTab === '/charge')
-            return <Charge/>;
+            return <div> 2 </div>;
         if (this.state.selectedTab === '/bus_list')
-            return <BusList/>
+            return <div> 3 </div>;
     },
 
     renderMenu()
