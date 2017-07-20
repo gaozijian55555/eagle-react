@@ -21,13 +21,14 @@ var OpsStationListCell = React.createClass({
         datas: React.PropTypes.object.isRequired
     },
 
-    pushStationDetail(){
+    pushStationDetail: function(){
+        alert('gaozijian_push');
         window.webkit.messageHandlers.PushStationDetail.postMessage({station_id: this.props.datas.id});
     },
 
     render: function () {
-        return <div className="content_ops_bg" onclick={this.pushStationDetail}>
-            <img className="content_ops_in" src={station_icon_inside} />
+        return <div className="content_ops_bg"  onClick={this.pushStationDetail} >
+            {this.props.datas.open_range=='内部专用'?<img className="content_ops_in" src={station_icon_inside}/>:''}
             <div className="cf">
                 {this.props.datas.building_status == '建设中'? <span className="content_ops_build fl"> 建 </span> : ''}
                 <span className="content_ops_title fl"> {this.props.datas.name} </span>
@@ -44,6 +45,12 @@ var OpsStationListCell = React.createClass({
 });
 
 export default class OpsStationList extends Component {
+
+    pushStationDetail(){
+        alert('gaozijian_push');
+        window.webkit.messageHandlers.PushStationDetail.postMessage({station_id: this.props.datas.id});
+    }
+
     callback(key) {
         console.log('onChange', key);
     }

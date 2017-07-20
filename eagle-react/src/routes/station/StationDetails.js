@@ -16,6 +16,7 @@ import  timeIcon  from  '../../images/time_icon.png'
 class TopComponent extends React.Component {
 
     onPhoneClick (){
+        alert('gaizuhaub');
         window.webkit.messageHandlers.ShowNativeNavigationSheet.postMessage({body: '传数据'});
     };
 
@@ -33,7 +34,7 @@ class TopComponent extends React.Component {
                         20000012
                         <span className="stationDeatils_phoneRightLine">
                     </span>
-                        <button onClick={this.onClickButton}>
+                        <button onClick={this.onPhoneClick}>
                             <img src={phoneIcon} className="stationDeatils_phoneIcon" alt=""/>
                         </button>
                     </div>
@@ -87,9 +88,7 @@ function PayTypeComponent(props, /*context*/) {
 
 class BottomComponent extends React.Component {
     startNav(){
-
         window.webkit.messageHandlers.ShowNativeNavigationSheet.postMessage({body: '传数据'});
-
     }
 
     render() {

@@ -157,15 +157,14 @@ class CenterComponent extends Component {
     }
 }
 
-
-class BottomComponent extends Component {
+class BottomComponent extends React.Component{
     propTypes = {
         data: React.PropTypes.object.isRequired,
     };
 
     clickChargingPrileDetails() {
         alert('wdwd');
-        window.webkit.messageHandlers.ClickChargingPrileDetails.postMessage({station_id: this.props.data.id});
+        window.webkit.messageHandlers.ShowNativeNavigationSheet.postMessage({body: '传数据'});
     }
 
     render() {
