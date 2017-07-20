@@ -157,8 +157,7 @@ class CenterComponent extends Component {
     }
 }
 
-
-class BottomComponent extends React.Component {
+class BottomComponent extends React.Component{
     propTypes = {
         data: React.PropTypes.object.isRequired,
     };
